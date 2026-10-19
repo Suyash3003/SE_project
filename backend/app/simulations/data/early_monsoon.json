@@ -1,0 +1,62 @@
+{
+  "id": "EARLY_MONSOON",
+  "name": "Early Monsoon",
+  "description": "Pre-monsoon deluge arrives 2 weeks early, causing a 60% surge in waterproofing demand.",
+  "affected_regions": [
+    "South",
+    "West"
+  ],
+  "inventory_multiplier": 1.0,
+  "demand_multiplier": 1.6,
+  "dashboard_summary": {
+    "total_revenue_mtd": 5175000,
+    "stockout_count": 23,
+    "pending_transfers": 3,
+    "revenue_at_risk": 18423660.0,
+    "avg_days_of_cover": 79.4
+  },
+  "impacted_warehouses": [
+    {
+      "warehouse_id": 3,
+      "warehouse_name": "Chennai Supply Center",
+      "city": "Chennai",
+      "critical_skus": 9,
+      "revenue_at_risk": 4092373.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 4,
+      "warehouse_name": "Bangalore Tech Warehouse",
+      "city": "Bangalore",
+      "critical_skus": 9,
+      "revenue_at_risk": 1461990.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 8,
+      "warehouse_name": "Pune Distribution Center",
+      "city": "Pune",
+      "critical_skus": 7,
+      "revenue_at_risk": 3389420.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 1,
+      "warehouse_name": "Delhi Central Warehouse",
+      "city": "Delhi",
+      "critical_skus": 7,
+      "revenue_at_risk": 2646537.0,
+      "is_affected_region": false
+    },
+    {
+      "warehouse_id": 10,
+      "warehouse_name": "Ahmedabad West Hub",
+      "city": "Ahmedabad",
+      "critical_skus": 6,
+      "revenue_at_risk": 2613747.0,
+      "is_affected_region": false
+    }
+  ],
+  "critical_skus": [],
+  "calculation_method": "dynamic_inventory_impact_engine"
+}

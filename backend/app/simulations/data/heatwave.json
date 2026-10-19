@@ -1,0 +1,153 @@
+{
+  "id": "HEATWAVE",
+  "name": "Severe Heatwave",
+  "description": "Intense summer heatwave accelerates building repainting and boosts exterior coating demand by 35%.",
+  "affected_regions": [
+    "Central",
+    "North"
+  ],
+  "inventory_multiplier": 1.0,
+  "demand_multiplier": 1.35,
+  "dashboard_summary": {
+    "total_revenue_mtd": 5175000,
+    "stockout_count": 25,
+    "pending_transfers": 3,
+    "revenue_at_risk": 20801446.0,
+    "avg_days_of_cover": 77.3
+  },
+  "impacted_warehouses": [
+    {
+      "warehouse_id": 3,
+      "warehouse_name": "Chennai Supply Center",
+      "city": "Chennai",
+      "critical_skus": 9,
+      "revenue_at_risk": 4092373.0,
+      "is_affected_region": false
+    },
+    {
+      "warehouse_id": 4,
+      "warehouse_name": "Bangalore Tech Warehouse",
+      "city": "Bangalore",
+      "critical_skus": 9,
+      "revenue_at_risk": 1461990.0,
+      "is_affected_region": false
+    },
+    {
+      "warehouse_id": 1,
+      "warehouse_name": "Delhi Central Warehouse",
+      "city": "Delhi",
+      "critical_skus": 8,
+      "revenue_at_risk": 3861967.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 8,
+      "warehouse_name": "Pune Distribution Center",
+      "city": "Pune",
+      "critical_skus": 7,
+      "revenue_at_risk": 3389420.0,
+      "is_affected_region": false
+    },
+    {
+      "warehouse_id": 10,
+      "warehouse_name": "Ahmedabad West Hub",
+      "city": "Ahmedabad",
+      "critical_skus": 6,
+      "revenue_at_risk": 3425390.0,
+      "is_affected_region": true
+    }
+  ],
+  "critical_skus": [
+    {
+      "sku_code": "PF-AWC-AP-RD04-1L",
+      "shade_name": "Terracotta Dream",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 0.3,
+      "simulated_stock": 12,
+      "revenue_at_risk": 103113.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-RD04-4L",
+      "shade_name": "Terracotta Dream",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 0.3,
+      "simulated_stock": 12,
+      "revenue_at_risk": 371207.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-RD04-10L",
+      "shade_name": "Terracotta Dream",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 0.3,
+      "simulated_stock": 12,
+      "revenue_at_risk": 876461.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-RD04-20L",
+      "shade_name": "Terracotta Dream",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 0.3,
+      "simulated_stock": 12,
+      "revenue_at_risk": 1649808.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-RD06-4L",
+      "shade_name": "Burnt Sienna",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 3.9,
+      "simulated_stock": 63,
+      "revenue_at_risk": 68053.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-BL08-1L",
+      "shade_name": "Aegean Teal",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 6.3,
+      "simulated_stock": 148,
+      "revenue_at_risk": 6253.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-BL08-20L",
+      "shade_name": "Aegean Teal",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 2.5,
+      "simulated_stock": 62,
+      "revenue_at_risk": 673539.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-GR10-4L",
+      "shade_name": "Fern Valley",
+      "city": "Delhi",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 4.5,
+      "simulated_stock": 150,
+      "revenue_at_risk": 113533.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-GR08-10L",
+      "shade_name": "Moss Green",
+      "city": "Jaipur",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 3.6,
+      "simulated_stock": 82,
+      "revenue_at_risk": 253272.0
+    },
+    {
+      "sku_code": "PF-AWC-AP-GR10-1L",
+      "shade_name": "Fern Valley",
+      "city": "Jaipur",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 1.6,
+      "simulated_stock": 50,
+      "revenue_at_risk": 65957.0
+    }
+  ],
+  "calculation_method": "dynamic_inventory_impact_engine"
+}

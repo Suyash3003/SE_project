@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+*.db
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.DS_Store
+*.egg-info/
+.venv/
+venv/
+
+# Project-local environments, dependencies, build products, and caches
+backend/.venv311/
+frontend/node_modules/
+frontend/dist/
+build/
+coverage/
+.pytest_cache/
+.mypy_cache/
+.coverage
+*.log
+
+# Local data and generated forecasting artifacts
+backend/data/
+backend/app/ml/models/
+
+# Unrelated academic templates; project diagrams and presentation remain tracked
+Lab Eval I Template.pdf
+UCS503 Project File Table of Content (END SEM) (3).doc

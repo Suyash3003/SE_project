@@ -1,0 +1,13 @@
+fastapi==0.115.0
+uvicorn[standard]==0.34.0
+python-dotenv==1.0.1
+pydantic==2.8.0
+prophet>=1.1.6,<2
+cmdstanpy>=1.2,<2
+pandas==2.2.2
+numpy==1.26.4
+python-dateutil==2.9.0
+google-genai>=1.0,<2
+Pillow==10.4.0
+python-multipart==0.0.9
+aiofiles==24.1.0

@@ -1,0 +1,153 @@
+{
+  "id": "TRUCK_STRIKE",
+  "name": "Truck Strike",
+  "description": "Nationwide trucking strike disrupts inbound freight in West & Central corridors.",
+  "affected_regions": [
+    "Central",
+    "West"
+  ],
+  "inventory_multiplier": 0.5,
+  "demand_multiplier": 1.0,
+  "dashboard_summary": {
+    "total_revenue_mtd": 4275000,
+    "stockout_count": 32,
+    "pending_transfers": 7,
+    "revenue_at_risk": 24796464.0,
+    "avg_days_of_cover": 63.8
+  },
+  "impacted_warehouses": [
+    {
+      "warehouse_id": 10,
+      "warehouse_name": "Ahmedabad West Hub",
+      "city": "Ahmedabad",
+      "critical_skus": 16,
+      "revenue_at_risk": 5371920.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 8,
+      "warehouse_name": "Pune Distribution Center",
+      "city": "Pune",
+      "critical_skus": 10,
+      "revenue_at_risk": 4124856.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 9,
+      "warehouse_name": "Bhopal Central Hub",
+      "city": "Bhopal",
+      "critical_skus": 10,
+      "revenue_at_risk": 2428377.0,
+      "is_affected_region": true
+    },
+    {
+      "warehouse_id": 3,
+      "warehouse_name": "Chennai Supply Center",
+      "city": "Chennai",
+      "critical_skus": 9,
+      "revenue_at_risk": 4092373.0,
+      "is_affected_region": false
+    },
+    {
+      "warehouse_id": 7,
+      "warehouse_name": "Mumbai Central Warehouse",
+      "city": "Mumbai",
+      "critical_skus": 9,
+      "revenue_at_risk": 2508845.0,
+      "is_affected_region": true
+    }
+  ],
+  "critical_skus": [
+    {
+      "sku_code": "PF-AWC-AP-RD04-4L",
+      "shade_name": "Terracotta Dream",
+      "city": "Mumbai",
+      "category": "Exterior Wall",
+      "simulated_days_of_cover": 6.5,
+      "simulated_stock": 85,
+      "revenue_at_risk": 8876.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-RD08-20L",
+      "shade_name": "Warm Blush",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 3.8,
+      "simulated_stock": 34,
+      "revenue_at_risk": 237841.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-RD09-10L",
+      "shade_name": "Dusty Rose",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 1.7,
+      "simulated_stock": 49,
+      "revenue_at_risk": 675220.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-BL01-4L",
+      "shade_name": "Pacific Breeze",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 1.4,
+      "simulated_stock": 30,
+      "revenue_at_risk": 220896.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-BL01-10L",
+      "shade_name": "Pacific Breeze",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 3.2,
+      "simulated_stock": 74,
+      "revenue_at_risk": 385016.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-BL02-10L",
+      "shade_name": "Midnight Ocean",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 4.8,
+      "simulated_stock": 110,
+      "revenue_at_risk": 219542.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-BL02-20L",
+      "shade_name": "Midnight Ocean",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 3.2,
+      "simulated_stock": 49,
+      "revenue_at_risk": 484120.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-GR04-20L",
+      "shade_name": "Emerald Isle",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 6.6,
+      "simulated_stock": 173,
+      "revenue_at_risk": 87234.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-GR05-4L",
+      "shade_name": "Mint Fresh",
+      "city": "Mumbai",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 3.5,
+      "simulated_stock": 103,
+      "revenue_at_risk": 190100.0
+    },
+    {
+      "sku_code": "PF-RLE-AP-RD01-1L",
+      "shade_name": "Bridal Red",
+      "city": "Pune",
+      "category": "Interior Wall",
+      "simulated_days_of_cover": 0.3,
+      "simulated_stock": 10,
+      "revenue_at_risk": 116133.0
+    }
+  ],
+  "calculation_method": "dynamic_inventory_impact_engine"
+}
