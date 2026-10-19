@@ -20,12 +20,7 @@ PaintFlow.ai is a full-stack supply chain intelligence platform for paint manufa
 
 ## Run on Localhost
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/Arijit2772-dev/hacktu7.0.git
-cd hacktu7.0
-```
 
 ### 2. Backend Setup
 
