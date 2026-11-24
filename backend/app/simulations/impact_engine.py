@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-PaintFlow.ai What-If Simulation Impact Engine.
+Modern Colours What-If Simulation Impact Engine.
 Calculates dynamic scenario effects (Truck Strike, Heatwave, Early Monsoon)
 directly from real database inventory, sales velocity, and product categories.
 """
