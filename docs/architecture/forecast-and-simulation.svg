@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PaintFlow.ai forecasting and scenario intelligence pipelines</title><desc id="desc">Two pipelines: Prophet model training and inference from SKU-region sales history, plus scenario-based inventory stress testing and risk calculations.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#64748b"/></marker><style>
+.h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}.section{font:700 17px Inter,Arial,sans-serif;letter-spacing:1px;fill:#334155}.t{font:700 16px Inter,Arial,sans-serif;fill:#0f172a}.b{font:400 13px Inter,Arial,sans-serif;fill:#334155}.small{font:600 12px Inter,Arial,sans-serif;fill:#64748b}.box{stroke-width:1.5}.line{fill:none;stroke:#64748b;stroke-width:2;marker-end:url(#arrow)}
+</style></defs>
+<rect width="1600" height="1000" fill="#f8fafc"/><text x="64" y="62" class="h">Forecasting &amp; Scenario Intelligence</text><text x="64" y="90" class="sub">Two analytical paths: supervised time-series forecasting and deterministic what-if inventory stress testing</text><rect x="64" y="116" width="1472" height="2" fill="#dbe4ee"/>
+<rect x="64" y="142" width="1472" height="365" rx="18" fill="#eff6ff" stroke="#93c5fd" class="box"/>
+<text x="92" y="180" class="section">A / DEMAND FORECASTING — PROPHET TRAINING &amp; INFERENCE</text>
+<rect x="92" y="220" width="220" height="108" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="112" y="250" class="t">Sales history</text><text x="112" y="276" class="b">date • SKU • region</text><text x="112" y="298" class="b">quantity_sold</text>
+<rect x="354" y="220" width="220" height="108" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="374" y="250" class="t">SKU × Region</text><text x="374" y="276" class="b">group observations</text><text x="374" y="298" class="b">eligible at ≥100 rows</text>
+<rect x="616" y="220" width="220" height="108" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="636" y="250" class="t">Prophet estimator</text><text x="636" y="276" class="b">yearly + weekly seasonality</text><text x="636" y="298" class="b">India holiday calendar</text>
+<rect x="878" y="220" width="220" height="108" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="898" y="250" class="t">Model artifact</text><text x="898" y="276" class="b">prophet_{sku}_{region}.pkl</text><text x="898" y="298" class="b">serialized model</text>
+<rect x="1140" y="220" width="360" height="108" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="1160" y="250" class="t">Forecast service</text><text x="1160" y="276" class="b">startup preload • in-memory cache</text><text x="1160" y="298" class="b">historical + future yhat / bounds</text>
+<path d="M312 274 H354 M574 274 H616 M836 274 H878 M1098 274 H1140" class="line"/>
+<rect x="354" y="372" width="480" height="94" rx="12" fill="#fff7ed" stroke="#fdba74" class="box"/><text x="378" y="402" class="t">Fallback forecaster</text><text x="378" y="428" class="b">Used when a model artifact is absent or prediction fails;</text><text x="378" y="450" class="b">generates seeded synthetic seasonal values with scenario uplift.</text>
+<path d="M1258 328 V416 H834" class="line"/>
+<text x="865" y="407" class="small">fallback route</text>
+<rect x="878" y="372" width="622" height="94" rx="12" fill="#fff" stroke="#60a5fa" class="box"/><text x="902" y="402" class="t">Consumers</text><text x="902" y="428" class="b">Admin forecast charts • dealer smart-order recommendation logic</text><text x="902" y="450" class="b">30-day horizon is used by dealer recommendation workflow</text>
+<path d="M834 420 H878" class="line"/>
+<rect x="64" y="535" width="1472" height="400" rx="18" fill="#f0fdf4" stroke="#86efac" class="box"/>
+<text x="92" y="574" class="section">B / WHAT-IF SIMULATION — INVENTORY IMPACT ENGINE</text>
+<rect x="92" y="618" width="250" height="110" rx="12" fill="#fff" stroke="#4ade80" class="box"/><text x="112" y="648" class="t">Baseline state</text><text x="112" y="674" class="b">stock • days of cover</text><text x="112" y="696" class="b">SKU • warehouse • region</text>
+<rect x="392" y="618" width="250" height="110" rx="12" fill="#fff" stroke="#4ade80" class="box"/><text x="412" y="648" class="t">Scenario selection</text><text x="412" y="674" class="b">Truck strike • Heatwave</text><text x="412" y="696" class="b">Early monsoon</text>
+<rect x="692" y="618" width="250" height="110" rx="12" fill="#fff" stroke="#4ade80" class="box"/><text x="712" y="648" class="t">Apply multipliers</text><text x="712" y="674" class="b">inventory × demand factor</text><text x="712" y="696" class="b">region &amp; category filters</text>
+<rect x="992" y="618" width="250" height="110" rx="12" fill="#fff" stroke="#4ade80" class="box"/><text x="1012" y="648" class="t">Risk calculations</text><text x="1012" y="674" class="b">simulated days of cover</text><text x="1012" y="696" class="b">stockout &lt; 3 days • risk &lt; 7</text>
+<rect x="1292" y="618" width="208" height="110" rx="12" fill="#fff" stroke="#4ade80" class="box"/><text x="1312" y="648" class="t">Scenario output</text><text x="1312" y="674" class="b">warehouse ranking</text><text x="1312" y="696" class="b">critical SKU alerts</text>
+<path d="M342 673 H392 M642 673 H692 M942 673 H992 M1242 673 H1292" class="line"/>
+<rect x="92" y="772" width="650" height="112" rx="12" fill="#fff" stroke="#4ade80" class="box"/>
+<text x="116" y="802" class="t">Scenario parameterization in source</text>
+<text x="116" y="830" class="b">Truck strike: inventory multiplier 0.50 in West / Central</text>
+<text x="116" y="852" class="b">Heatwave: exterior wall demand ×1.35 in North / Central</text>
+<text x="116" y="874" class="b">Early monsoon: waterproofing demand ×1.60 in West / South</text>
+<rect x="782" y="772" width="718" height="112" rx="12" fill="#fff7ed" stroke="#fdba74" class="box"/>
+<text x="806" y="802" class="t">Runtime behavior &amp; interpretation</text>
+<text x="806" y="830" class="b">Scenario JSON is preloaded at startup; calculations use the local inventory dataset.</text>
+<text x="806" y="852" class="b">Fallback summary contains configured estimates when dynamic data is unavailable.</text>
+<text x="806" y="874" class="b">Reported revenue MTD baseline includes a fixed constant in current impact engine.</text>
+</svg>
