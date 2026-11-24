@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 # --- 1. THE SYSTEM PROMPT DEFINITION ---
 BASE_SYSTEM_PROMPT = f"""
-You are the "PaintFlow Supply Chain Copilot", an expert logistics AI assistant.
+You are the "Modern Colours Supply Chain Copilot", an expert logistics AI assistant.
 Your goal is to help warehouse managers optimize inventory, predict risks, and handle disruptions.
 
 CURRENT SYSTEM TIME: {APP_SIMULATION_DATE}
