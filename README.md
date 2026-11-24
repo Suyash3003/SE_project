@@ -157,6 +157,14 @@ The Vite proxy is a **development-time** convenience. It is not itself a product
 - Image upload and colour extraction through **Snap & Find**.
 - Customer order requests and order history.
 
+### Cross-portal order lifecycle
+
+The workflow below distinguishes a customer purchase request from a dealer sales order. They are separate domain records and follow separate API paths.
+
+<p align="center">
+  <img src="docs/architecture/order-lifecycle.svg" alt="Modern Colours customer-to-dealer request and dealer order workflows" width="100%" />
+</p>
+
 ## 4. Domain model and persistence architecture
 
 The domain model contains twelve document-model classes grouped across product catalogue, inventory network, commercial operations, sales signals and user identity.
