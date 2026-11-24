@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
-<title id="title">PaintFlow.ai — System Architecture</title><desc id="desc">End-to-end architecture from role-based React portals through FastAPI routers and services to SQLite, Prophet model artifacts, scenario snapshots, and optional Gemini AI.</desc>
+<title id="title">Modern Colours — System Architecture</title><desc id="desc">End-to-end architecture from role-based React portals through FastAPI routers and services to SQLite, Prophet model artifacts, scenario snapshots, and optional Gemini AI.</desc>
 <defs>
   <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6 Z" fill="#64748b"/></marker>
   <style>
@@ -12,7 +12,7 @@
   </style>
 </defs>
 <rect width="1600" height="1120" fill="#f8fafc"/>
-<text x="64" y="64" class="h">PaintFlow.ai | System Architecture</text>
+<text x="64" y="64" class="h">Modern Colours | System Architecture</text>
 <text x="64" y="92" class="sub">Role-based B2B2C supply-chain intelligence • Current repository implementation</text>
 <rect x="64" y="120" width="1472" height="2" fill="#dbe4ee"/>
 <text x="64" y="158" class="layer">01 / PRESENTATION LAYER</text>
