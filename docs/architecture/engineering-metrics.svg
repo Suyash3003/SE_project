@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+<title id="title">PaintFlow.ai engineering profile and documented validation snapshot</title><desc id="desc">Charts show counts of three UI portals, seven API routers, five domain service modules and twelve model classes. Cards show the historical Prophet validation snapshot: twenty models, fourteen thousand eight hundred twenty records, thirty-one days, WAPE 12.70%, MAE 5.30 units per day, and twenty tests passed.</desc>
+<defs><style>
+.h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}.title{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.label{font:600 14px Inter,Arial,sans-serif;fill:#334155}.value{font:700 23px Inter,Arial,sans-serif;fill:#0f172a}.note{font:400 12px Inter,Arial,sans-serif;fill:#64748b}.barbg{fill:#e2e8f0}.bar{fill:#6366f1}
+</style></defs>
+<rect width="1600" height="920" fill="#f8fafc"/>
+<text x="64" y="62" class="h">Engineering Profile &amp; Validation Snapshot</text>
+<text x="64" y="90" class="sub">Counts derived from source structure; model and test results transcribed from project_analysis.md</text>
+<rect x="64" y="116" width="1472" height="2" fill="#dbe4ee"/>
+<rect x="64" y="146" width="700" height="520" rx="18" fill="#fff" stroke="#cbd5e1"/>
+<text x="96" y="188" class="title">Architecture footprint</text>
+<text x="96" y="216" class="note">Code-level counts • not traffic, throughput or runtime benchmarks</text>
+<g>
+<text x="96" y="282" class="label">Domain model classes</text><rect x="320" y="260" width="360" height="28" rx="7" class="barbg"/><rect x="320" y="260" width="360" height="28" rx="7" class="bar"/><text x="700" y="282" class="label">12</text>
+<text x="96" y="366" class="label">API routers</text><rect x="320" y="344" width="360" height="28" rx="7" class="barbg"/><rect x="320" y="344" width="210" height="28" rx="7" fill="#0ea5e9"/><text x="700" y="366" class="label">7</text>
+<text x="96" y="450" class="label">Service modules</text><rect x="320" y="428" width="360" height="28" rx="7" class="barbg"/><rect x="320" y="428" width="150" height="28" rx="7" fill="#10b981"/><text x="700" y="450" class="label">5</text>
+<text x="96" y="534" class="label">Role-based portals</text><rect x="320" y="512" width="360" height="28" rx="7" class="barbg"/><rect x="320" y="512" width="90" height="28" rx="7" fill="#f59e0b"/><text x="700" y="534" class="label">3</text>
+<text x="96" y="612" class="note">Domain class count: Product, Shade, SKU, Region, Warehouse, InventoryLevel, InventoryTransfer,</text><text x="96" y="634" class="note">Dealer, DealerOrder, SalesHistory, CustomerOrderRequest and User.</text>
+</g>
+<rect x="800" y="146" width="736" height="520" rx="18" fill="#fff" stroke="#cbd5e1"/>
+<text x="832" y="188" class="title">Prophet holdout validation</text>
+<text x="832" y="216" class="note">Historical result reported in project_analysis.md • not a fresh benchmark run</text>
+<rect x="832" y="250" width="204" height="110" rx="12" fill="#eef2ff" stroke="#c7d2fe"/><text x="856" y="284" class="label">Models evaluated</text><text x="856" y="330" class="value">20</text>
+<rect x="1060" y="250" width="204" height="110" rx="12" fill="#ecfeff" stroke="#a5f3fc"/><text x="1084" y="284" class="label">Holdout records</text><text x="1084" y="330" class="value">14,820</text>
+<rect x="1288" y="250" width="204" height="110" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/><text x="1312" y="284" class="label">Holdout window</text><text x="1312" y="330" class="value">31 days</text>
+<text x="832" y="420" class="label">WAPE</text><text x="1476" y="420" text-anchor="end" class="value">12.70%</text><rect x="832" y="438" width="660" height="20" rx="6" class="barbg"/><rect x="832" y="438" width="84" height="20" rx="6" fill="#6366f1"/>
+<text x="832" y="510" class="label">Mean absolute error (MAE)</text><text x="1476" y="510" text-anchor="end" class="value">5.30 units/day</text><rect x="832" y="528" width="660" height="20" rx="6" class="barbg"/><rect x="832" y="528" width="84" height="20" rx="6" fill="#0ea5e9"/>
+<text x="832" y="594" class="note">Bars use a visual 0–100 display scale for layout only; the two metrics have different units</text><text x="832" y="614" class="note">and should not be compared directly. WAPE formula: Σ|actual − forecast| / Σ|actual| × 100.</text>
+<rect x="64" y="700" width="1472" height="150" rx="18" fill="#f0fdf4" stroke="#86efac"/>
+<text x="96" y="742" class="title">Automated test snapshot (as documented)</text>
+<text x="96" y="790" class="value">20 passed</text><rect x="280" y="768" width="990" height="24" rx="8" fill="#dcfce7"/><rect x="280" y="768" width="990" height="24" rx="8" fill="#16a34a"/>
+<text x="1298" y="790" class="value">0 failed</text>
+<text x="96" y="820" class="note">The project analysis report records 20 backend tests passing in 6.97 s. Treat this as a reported run snapshot, not continuous CI status.</text>
+<text x="64" y="890" class="note">Caveat: Prophet model binaries are not present in the inspected tracked tree. Reproduce validation by seeding sales history, training model artifacts, and rerunning the documented holdout evaluation.</text>
+</svg>
