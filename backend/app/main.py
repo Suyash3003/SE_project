@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="PaintFlow.ai API",
+    title="Modern Colours API",
     description="AI-Powered Supply Chain Intelligence for Paint Manufacturing",
     version="1.0.0",
     lifespan=lifespan,
@@ -52,7 +52,7 @@ app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 
 @app.get("/api/health")
 def health_check():
-    return {"status": "ok", "app": "PaintFlow.ai"}
+    return {"status": "ok", "app": "Modern Colours"}
 
 
 @app.get("/api/meta")
