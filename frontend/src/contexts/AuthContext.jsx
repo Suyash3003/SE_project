@@ -6,7 +6,7 @@ const AuthContext = createContext(null)
 export function AuthProvider({ children }) {
   const [session, setSession] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem('paintflow_session')) || null
+      return JSON.parse(localStorage.getItem('modern_colours_session')) || null
     } catch {
       return null
     }
@@ -14,12 +14,12 @@ export function AuthProvider({ children }) {
 
   const saveSession = (data) => {
     const next = { token: data.access_token, role: data.role, dealerId: data.dealer_id }
-    localStorage.setItem('paintflow_session', JSON.stringify(next))
+    localStorage.setItem('modern_colours_session', JSON.stringify(next))
     setSession(next)
   }
 
   const logout = () => {
-    localStorage.removeItem('paintflow_session')
+    localStorage.removeItem('modern_colours_session')
     setSession(null)
   }
 
