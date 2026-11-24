@@ -38,20 +38,20 @@ def db(test_db_path, monkeypatch):
 
     # Seed core fixtures
     admin = User(
-        email="admin@paintflow.ai",
+        email="admin@moderncolours.local",
         password_hash=hash_password("AdminPass123!"),
         role="admin",
         status="active",
     )
     dealer_user = User(
-        email="dealer@paintflow.ai",
+        email="dealer@moderncolours.local",
         password_hash=hash_password("DealerPass123!"),
         role="dealer",
         dealer_id=1,
         status="active",
     )
     customer_user = User(
-        email="customer@paintflow.ai",
+        email="customer@moderncolours.local",
         password_hash=hash_password("CustomerPass123!"),
         role="customer",
         status="active",
