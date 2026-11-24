@@ -6,7 +6,7 @@ from starlette.testclient import TestClient
 
 # Ensure test configuration
 os.environ["ENVIRONMENT"] = "development"
-os.environ["JWT_SECRET"] = "paintflow-test-secret-key-at-least-32-chars-long-secure-2025"
+os.environ["JWT_SECRET"] = "modern-colours-test-secret-key-at-least-32-chars-long-secure-2025"
 os.environ["ALLOWED_ORIGINS"] = "http://localhost:5173"
 
 import app.config as config
