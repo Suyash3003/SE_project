@@ -1,167 +1,335 @@
-# PaintFlow.ai — AI-Powered Supply Chain Intelligence for Paint Manufacturing
 
-PaintFlow.ai is a full-stack supply chain intelligence platform for paint manufacturing and distribution. It features three role-based portals (Admin, Dealer, Customer) with AI-powered demand forecasting, inventory optimization, smart order recommendations, and a conversational AI copilot.
+# MODERN COLOURS
+### Intelligent Manufacturing. Connected Operations.
 
-## Tech Stack
+<p align="center">
+  <img src="./mark.svg" alt="Modern Colours Logo" width="110" />
+</p>
 
-| Layer      | Technology                                                  |
-| ---------- | ----------------------------------------------------------- |
-| Backend    | Python 3.10+, FastAPI, SQLite                               |
-| Frontend   | React 19, Vite, TailwindCSS 4, Recharts, React Router DOM  |
-| ML         | Prophet (time-series forecasting)                           |
-| AI         | Google Gemini 1.5 Flash (conversational copilot)            |
-| Maps       | react-simple-maps (India warehouse network visualization)   |
+<p align="center">
+  <strong>A Unified Digital Operations Platform for Modern Manufacturing</strong>
+  <br />
+  Designed & Engineered by <a href="https://leorit.xyz">Leorit</a>
+  <br />
+  Kohara, Ludhiana, Punjab, India
+</p>
 
-## Prerequisites
+<p align="center">
+  <img src="https://img.shields.io/badge/PLATFORM-Manufacturing%20OS-8802C9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DEPLOYMENT-Vercel-111111?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/ARCHITECTURE-Modular-EB0102?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/INTERFACE-Enterprise%20UI-FEEF03?style=for-the-badge" />
+</p>
 
-- **Python 3.10+** (tested on 3.13)
-- **Node.js 18+** and **npm**
-- **Google Gemini API Key** (optional — copilot falls back to heuristics without it)
+---
 
-## Run on Localhost
+## Overview
 
+**Modern Colours** is a digitally enabled manufacturing operations environment designed to bring production visibility, sales coordination, order management, and lead intelligence into one unified software experience.
 
+Developed by **Leorit**, the platform brings together three interconnected operational modules under a consistent design system and shared business vocabulary.
 
-### 2. Backend Setup
+The objective is simple: create a structured digital layer across manufacturing operations, connecting the information that moves between customers, orders, production teams, and business development.
 
-```bash
-# Navigate to the backend directory
-cd backend
+Instead of fragmented operational interfaces, Modern Colours presents a unified environment for understanding and managing the manufacturing lifecycle.
 
-# Create and activate a virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate        # macOS / Linux
-# venv\Scripts\activate         # Windows
+## Platform Architecture
 
-# Install Python dependencies
-pip install -r requirements.txt
+The platform consists of three specialized operational modules.
 
-# SQLite is created automatically at backend/data/paintflow.db.
-# To use a different path, set DATABASE_PATH.
-# $env:DATABASE_PATH="C:\path\to\paintflow.db"
+| Module | Route | Operational Focus |
+|---|---|---|
+| Production & Machine Intelligence | `/machine-module` | Production visibility and machine operations |
+| Sales & Order Management | `/sales-module` | Customer relationships and order lifecycle |
+| Lead Intelligence | `/lead-module` | Lead tracking and business development |
 
-# Required for authentication. Use a random value of at least 32 characters.
-# $env:JWT_SECRET="replace-with-a-long-random-secret"
+### 01 — Production & Machine Intelligence
 
-# (Optional) Set your Gemini API key for the AI copilot
-export GEMINI_API_KEY="your-google-gemini-api-key"
-# On Windows: set GEMINI_API_KEY=your-google-gemini-api-key
+`machine_prod_extended/`
 
-# Seed the database and train Prophet forecasting models
-python seed_and_train.py
+A production-focused operational interface designed to provide visibility into factory-floor activities.
 
-# Create the first manufacturer admin account
-python create_admin.py
+- Production monitoring interface
+- Machine-level operational views
+- Operator-specific workspaces
+- Batch and production tracking
+- Time-driven operational scenarios
 
-# Start the backend server
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8001
-```
+### 02 — Sales & Order Management
 
-The backend API will be available at **http://localhost:8001**
-Interactive API docs at **http://localhost:8001/docs**
+`sales_crm/`
 
-Prophet 1.5 includes the compatible Stan runtime used by this MVP. If model
-training fails after recreating the environment, reinstall the backend
-dependencies before running `seed_and_train.py` again:
+A centralized commercial operations interface connecting customer relationships with order management.
 
-```bash
-python -m pip install -r requirements.txt
-```
+- Customer relationship management
+- Sales pipeline visibility
+- Order lifecycle management
+- Product and raw-material references
+- Customer-specific operational views
 
-### 3. Frontend Setup
+### 03 — Lead Intelligence
 
-Open a **new terminal** window:
+`lead_system/`
 
-```bash
-# Navigate to the frontend directory
-cd frontend
+A business development interface designed to structure lead information and provide visibility into prospective business opportunities.
 
-# Install Node dependencies
-npm install
+- Lead management
+- Prospect tracking
+- Business development workflows
+- Lead intelligence interfaces
+- Structured sales opportunity views
 
-# Start the dev server
+---
 
-# Install Node dependencies
-npm install
+## Unified Design Architecture
 
-# Start the dev server
-npm run dev
-```
+All three modules follow a shared design language to maintain visual and operational consistency.
 
-The frontend will be available at **http://localhost:5173**
+The shared design system is the single source of truth for the entire platform.
 
-> Vite automatically proxies `/api` requests to the backend at `http://localhost:8001`.
+**Core design principles**
 
-### 4. Open the App
+- Consistent colour architecture
+- Unified typography and hierarchy
+- Standardized spacing and layout
+- Reusable interface components
+- Consistent elevation and surfaces
+- Motion and interaction guidelines
+- Responsive operational interfaces
 
-Visit **http://localhost:5173** in your browser. From the landing page, select a portal:
+**Design resources**
 
-- **Admin Portal** — Supply chain dashboard, inventory management, demand forecasting, dealer analytics
-- **Dealer Portal** — Smart order recommendations, order tracking, health score
-- **Customer Portal** — Shade catalog, nearby dealer finder, snap & find color matcher
+- `DESIGN_SYSTEM.md` — Core design specifications.
+- `design-system-kit copy/` — Shared component and design references.
 
-## Project Structure
+Individual modules consume the shared design language without redefining its foundations.
 
-```
-hacktu7.0/
-├── backend/
-│   ├── app/
-│   │   ├── main.py                # FastAPI entry point
-│   │   ├── config.py              # App configuration
-│   │   ├── database.py              # SQLite persistence and session helpers
-│   │   ├── models/                # Database models (Product, Shade, SKU, Warehouse, Dealer, etc.)
-│   │   ├── routers/               # API endpoints (admin, dealer, customer, forecast, copilot, simulate)
-│   │   ├── services/              # Business logic (analytics, forecast, inventory, dealer, copilot)
-│   │   ├── ml/                    # Prophet model training & saved models
-│   │   └── simulations/           # Supply chain scenario engine (truck strike, heatwave, monsoon)
-│   ├── seed/                      # Database seeding scripts
-│   ├── seed_and_train.py          # One-command setup: seed DB + train ML models
-│   └── requirements.txt
+---
+
+## Shared Business Data Model
+
+The platform maintains consistent business terminology and reference data across all three modules.
+
+| Data Domain | Shared Convention |
+|---|---|
+| Customers | 8 common customer records |
+| Products | Unified product references |
+| Raw Materials | Shared material references |
+| Geography | Consistent city references |
+| Production Batches | `B-2280` – `B-2299` |
+| Currency | Indian Rupee (₹) |
+| Number Formatting | Indian numbering conventions |
+| Date Formatting | `DD MMM YYYY` |
+
+This consistency enables the modules to be presented together as one connected operational environment.
+
+---
+
+## Operational Experience
+
+### Scenario-driven Interfaces
+
+The platform incorporates a scripted operational timeline to demonstrate how information and interface states evolve over time.
+
+A simulated clock drives the predefined scenarios, allowing the applications to present changing operational states without requiring a live backend.
+
+### Presenter Console
+
+The built-in presenter console provides control over the operational timeline.
+
+**Keyboard shortcut:** `CTRL + SHIFT + D`
+
+Available controls:
+
+- Play / Pause
+- 1× — Normal playback
+- 5× — Accelerated playback
+- 20× — Fast-forward playback
+- Jump to predefined moments
+- Reset scenario
+
+The console remains hidden during normal presentation.
+
+### Contextual User Access
+
+Modules support direct entry into predefined user contexts through URL parameters.
+
+Example:
+
+`/machine-module/?as=U-106`
+
+This opens the machine module in the context of the specified user.
+
+### Continuous Operation
+
+Each module automatically cycles through its scripted operational timeline approximately every four minutes.
+
+This supports unattended displays, presentations, and continuous product walkthroughs.
+
+---
+
+## Technology & Deployment Architecture
+
+Modern Colours is organized as three independent frontend applications assembled into one unified deployment.
+
+Each module maintains its own Vite configuration, dependencies, and application structure.
+
+### Deployment Architecture
+
+```text
+MODERN COLOURS
 │
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx                # React Router configuration
-│   │   ├── pages/                 # Admin, Dealer, Customer portal pages
-│   │   ├── components/            # Reusable UI components (charts, maps, copilot, paint swatches)
-│   │   ├── contexts/              # React context (Simulation scenarios)
-│   │   ├── api/                   # Axios API client layer
-│   │   └── layouts/               # Portal layouts (Admin, Dealer, Customer)
-│   ├── vite.config.js
-│   └── package.json
+├── Landing Page
 │
-└── README.md
+├── Production & Machine
+│   └── machine_prod_extended/
+│
+├── Sales & Order Management
+│   └── sales_crm/
+│
+├── Lead Intelligence
+│   └── lead_system/
+│
+├── Shared Design System
+│   ├── DESIGN_SYSTEM.md
+│   └── design-system-kit copy/
+│
+├── build.mjs
+├── vercel.json
+└── dist/
+    ├── index.html
+    ├── machine-module/
+    ├── sales-module/
+    └── lead-module/
 ```
 
-## Key Features
+### Unified Build Pipeline
 
-- **Demand Forecasting** — Prophet-based time-series prediction with Diwali surge detection
-- **Inventory Optimization** — Days-of-cover analysis, stockout alerts, dead stock identification
-- **Smart Transfers** — AI-recommended warehouse-to-warehouse inventory rebalancing
-- **Smart Orders** — ML-driven order recommendations for dealers with cost savings calculation
-- **AI Copilot** — Gemini-powered conversational assistant with generative UI widgets
-- **Scenario Simulation** — What-if analysis for truck strikes, heatwaves, and early monsoons
-- **Snap & Find** — Color matching from photos or hex codes to find the closest paint shade
-- **India Warehouse Map** — Geographic visualization of warehouse network with transfer arcs
+The custom `build.mjs` orchestrates the deployment process.
 
-## Environment Variables
+1. Builds each available application independently.
+2. Applies the appropriate base path to each application.
+3. Collects the generated assets.
+4. Assembles the applications into a unified `dist/` directory.
+5. Includes the central landing page.
+6. Skips modules that are not yet present.
 
-| Variable        | Required | Description                          |
-| --------------- | -------- | ------------------------------------ |
-| `GEMINI_API_KEY` | No       | Google Gemini API key for AI copilot. Falls back to heuristic responses if not set. |
-| `DATABASE_PATH` | No | SQLite database path. Defaults to `backend/data/paintflow.db`. |
+This architecture allows individual modules to evolve independently while maintaining a single deployment endpoint.
 
-## API Documentation
+---
 
-Once the backend is running, visit:
+## Installation & Development
 
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+### Prerequisites
 
-## Build for Production
+- Node.js
+- npm
+- Git
+
+### Clone the Repository
 
 ```bash
-# Build the frontend
-cd frontend
-npm run build
-# Output will be in frontend/dist/
+git clone <repository-url>
+cd <repository-folder>
 ```
+
+### Run Individual Modules
+
+Each module can be developed independently.
+
+**Production & Machine**
+
+```bash
+npm run dev:machine
+```
+
+`http://localhost:5173/machine-module/`
+
+**Sales & Order Management**
+
+```bash
+npm run dev:sales
+```
+
+`http://localhost:5173/sales-module/`
+
+**Lead Intelligence**
+
+```bash
+npm run dev:leads
+```
+
+`http://localhost:5173/lead-module/`
+
+The first execution of an individual development command installs that application's dependencies.
+
+### Build the Complete Platform
+
+```bash
+node build.mjs
+```
+
+The unified production bundle is generated in:
+
+```text
+dist/
+```
+
+---
+
+## Production Deployment
+
+The platform is configured for a unified deployment through **Vercel**.
+
+Import the repository into Vercel and retain the repository's existing deployment configuration.
+
+| Configuration | Value |
+|---|---|
+| Build Command | `node build.mjs` |
+| Output Directory | `dist` |
+| Install Command | `npm install --no-audit --no-fund` |
+| Deployment Configuration | `vercel.json` |
+
+The existing Vercel configuration handles the build output and SPA routing for the individual modules.
+
+### Deployment Model
+
+**One repository. Three applications. One deployment.**
+
+Each application remains independently structured while being delivered through a unified platform.
+
+---
+
+## Environment & Integration Scope
+
+The deployed environment uses prepared seed data and a simulated operational clock to provide a consistent, repeatable software experience.
+
+The current frontend environment does not establish a connection to the factory's live ERP, production database, authentication infrastructure, or external backend services.
+
+It operates independently of the existing live production ERP.
+
+This separation ensures that the platform environment can be explored and presented without modifying or interfering with actual factory operations.
+
+---
+
+## About Leorit
+
+**Built by Leorit — Engineering Digital Infrastructure for Industry.**
+
+Leorit develops technology-driven solutions for businesses looking to modernize complex operational workflows.
+
+From manufacturing software and digital operations to intelligent automation and digital twins, Leorit focuses on transforming fragmented business processes into structured, connected systems.
+
+**Website:** https://leorit.xyz
+
+---
+
+<p align="center">
+  <img src="./mark.svg" alt="Modern Colours" width="48" />
+  <br />
+  <strong>MODERN COLOURS</strong>
+  <br />
+  Intelligent Manufacturing. Connected Operations.
+  <br /><br />
+  <sub>Designed & Engineered by Leorit · Kohara, Ludhiana, India</sub>
+</p>
