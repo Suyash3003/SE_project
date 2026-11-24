@@ -38,7 +38,7 @@ def test_forbidden_role_access(client, customer_headers):
 
 def test_valid_admin_login(client):
     payload = {
-        "identifier": "admin@paintflow.ai",
+        "identifier": "admin@moderncolours.local",
         "password": "AdminPass123!",
         "role": "admin",
     }
