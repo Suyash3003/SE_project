@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours customer request and dealer order workflows</title>
+<desc id="desc">Two connected but distinct flows. Customer order requests are created by customers, handled by dealers, and monitored by administrators. Dealer orders can be placed manually or generated from accepted smart-order recommendations.</desc>
+<defs>
+  <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#64748b"/></marker>
+  <style>
+    .h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}
+    .sec{font:700 17px Inter,Arial,sans-serif;letter-spacing:1px;fill:#334155}.t{font:700 17px Inter,Arial,sans-serif;fill:#0f172a}
+    .b{font:400 13px Inter,Arial,sans-serif;fill:#334155}.n{font:600 12px Inter,Arial,sans-serif;fill:#64748b}
+    .box{stroke-width:1.5}.line{fill:none;stroke:#64748b;stroke-width:2;marker-end:url(#arr)}
+    .dash{fill:none;stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arr)}
+  </style>
+</defs>
+<rect width="1600" height="920" fill="#f8fafc"/>
+<text x="64" y="62" class="h">Customer-to-Dealer Workflow Architecture</text>
+<text x="64" y="90" class="sub">Operational sequence across customer, dealer and admin portals • API endpoints and document persistence</text>
+<rect x="64" y="116" width="1472" height="2" fill="#dbe4ee"/>
+
+<rect x="64" y="146" width="1472" height="430" rx="18" fill="#eff6ff" stroke="#93c5fd" class="box"/>
+<text x="92" y="184" class="sec">A / CUSTOMER ORDER REQUEST LIFECYCLE</text>
+
+<rect x="92" y="226" width="250" height="124" rx="12" fill="#fff" stroke="#60a5fa" class="box"/>
+<text x="116" y="258" class="t">Customer portal</text>
+<text x="116" y="286" class="b">Select shade, pack size,</text><text x="116" y="308" class="b">dealer and quantity</text>
+<text x="116" y="332" class="n">POST /api/customer/order-request</text>
+
+<rect x="392" y="226" width="250" height="124" rx="12" fill="#fff" stroke="#60a5fa" class="box"/>
+<text x="416" y="258" class="t">API validation</text>
+<text x="416" y="286" class="b">Customer role dependency</text><text x="416" y="308" class="b">Dealer + shade existence checks</text>
+<text x="416" y="332" class="n">FastAPI + Pydantic</text>
+
+<rect x="692" y="226" width="250" height="124" rx="12" fill="#fff" stroke="#60a5fa" class="box"/>
+<text x="716" y="258" class="t">Persist request</text>
+<text x="716" y="286" class="b">CustomerOrderRequest</text><text x="716" y="308" class="b">status = requested</text>
+<text x="716" y="332" class="n">SQLite documents collection</text>
+
+<rect x="992" y="226" width="250" height="124" rx="12" fill="#fff" stroke="#60a5fa" class="box"/>
+<text x="1016" y="258" class="t">Dealer workspace</text>
+<text x="1016" y="286" class="b">Retrieve assigned requests</text><text x="1016" y="308" class="b">GET /{dealer_id}/customer-requests</text>
+<text x="1016" y="332" class="n">Dealer role dependency</text>
+
+<rect x="1292" y="226" width="208" height="124" rx="12" fill="#fff" stroke="#60a5fa" class="box"/>
+<text x="1316" y="258" class="t">Status update</text>
+<text x="1316" y="286" class="b">Contacted / fulfilled /</text><text x="1316" y="308" class="b">cancelled</text>
+<text x="1316" y="332" class="n">PATCH request status</text>
+
+<path d="M342 288 H392 M642 288 H692 M942 288 H992 M1242 288 H1292" class="line"/>
+
+<rect x="392" y="408" width="250" height="110" rx="12" fill="#fff7ed" stroke="#fdba74" class="box"/>
+<text x="416" y="440" class="t">Admin oversight</text>
+<text x="416" y="468" class="b">View all customer requests</text>
+<text x="416" y="492" class="n">GET /api/admin/customer-requests</text>
+<path d="M1116 350 V382 H517 V408" class="dash"/>
+<text x="810" y="376" class="n">Cross-portal visibility; admin reads request records</text>
+
+<rect x="692" y="408" width="550" height="110" rx="12" fill="#fff" stroke="#cbd5e1" class="box"/>
+<text x="716" y="440" class="t">State and data semantics</text>
+<text x="716" y="468" class="b">CustomerOrderRequest is distinct from DealerOrder.</text>
+<text x="716" y="492" class="b">A request status change does not automatically create a dealer sales order.</text>
+
+<rect x="64" y="604" width="1472" height="242" rx="18" fill="#f0fdf4" stroke="#86efac" class="box"/>
+<text x="92" y="642" class="sec">B / DEALER ORDER &amp; SMART-ORDER PATH</text>
+
+<rect x="92" y="684" width="280" height="112" rx="12" fill="#fff" stroke="#4ade80" class="box"/>
+<text x="116" y="716" class="t">Dealer dashboard</text><text x="116" y="744" class="b">Review inventory and</text><text x="116" y="768" class="b">forecast-driven recommendations</text>
+
+<rect x="432" y="684" width="300" height="112" rx="12" fill="#fff" stroke="#4ade80" class="box"/>
+<text x="456" y="716" class="t">Recommendation engine</text><text x="456" y="744" class="b">30-day forecast + stock cover</text><text x="456" y="768" class="b">Rank urgency and suggested quantity</text>
+
+<rect x="792" y="684" width="300" height="112" rx="12" fill="#fff" stroke="#4ade80" class="box"/>
+<text x="816" y="716" class="t">Dealer order action</text><text x="816" y="744" class="b">Manual order OR accept bundle</text><text x="816" y="768" class="b">POST /orders or /orders/bundle</text>
+
+<rect x="1152" y="684" width="348" height="112" rx="12" fill="#fff" stroke="#4ade80" class="box"/>
+<text x="1176" y="716" class="t">Persist DealerOrder records</text><text x="1176" y="744" class="b">Order source • quantity • SKU</text><text x="1176" y="768" class="b">Status • AI-suggested flag • savings estimate</text>
+
+<path d="M372 740 H432 M732 740 H792 M1092 740 H1152" class="line"/>
+<text x="64" y="886" class="n">Source basis: backend/app/routers/customer.py, dealer.py and admin.py; backend/app/models/customer.py and dealer.py. Diagram shows implemented route behaviour, not external ERP integration.</text>
+</svg>
