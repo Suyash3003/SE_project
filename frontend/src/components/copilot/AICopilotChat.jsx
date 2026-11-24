@@ -7,7 +7,7 @@ import ChatBubble from './ChatBubble'
 export default function AICopilotChat() {
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState([
-    { text: "Hi! I'm your PaintFlow AI assistant. Ask me about inventory, stockouts, or demand trends.", isUser: false },
+    { text: "Hi! I'm your Modern Colours AI assistant. Ask me about inventory, stockouts, or demand trends.", isUser: false },
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
