@@ -1,8 +1,8 @@
-# PaintFlow.ai
+# Modern Colours
 
 ## AI-powered supply-chain intelligence for paint distribution
 
-PaintFlow.ai is a full-stack web platform for paint manufacturers, dealers,
+Modern Colours is a full-stack web platform for paint manufacturers, dealers,
 and customers. It turns fragmented inventory, demand, and customer-order
 information into one workflow: customers find a shade and request it from a
 nearby dealer; dealers manage demand and leads; manufacturers monitor inventory,
@@ -17,7 +17,7 @@ Paint distribution has three connected problems:
 3. Manufacturers lack a single view of demand, inventory health, transfers,
    and disruption impact across their network.
 
-PaintFlow.ai connects these groups through role-based portals, live inventory
+Modern Colours connects these groups through role-based portals, live inventory
 signals, demand forecasts, smart recommendations, and an AI copilot.
 
 ## What the platform has now
@@ -102,7 +102,7 @@ GEMINI_API_KEY is required for live Gemini responses.
 
 ## What is intentionally incomplete
 
-PaintFlow.ai is a working MVP/prototype. The following are planned
+Modern Colours is a working MVP/prototype. The following are planned
 production-grade extensions, not currently implemented:
 
 - Online payment, invoices, refunds, and payment reconciliation.
