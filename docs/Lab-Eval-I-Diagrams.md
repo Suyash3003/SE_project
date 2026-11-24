@@ -1,4 +1,4 @@
-# PaintFlow.ai — Lab Evaluation I Diagrams
+# Modern Colours — Lab Evaluation I Diagrams
 
 These diagrams cover the requirements listed in the UCS503 Lab Evaluation I
 template. They are written in Mermaid so they remain editable before being
@@ -13,7 +13,7 @@ flowchart LR
     admin[Manufacturer Admin]
     ai[Gemini AI Service]
 
-    subgraph PaintFlow["PaintFlow.ai Platform"]
+    subgraph Modern Colours["Modern Colours Platform"]
         auth([Register / Sign in])
         catalog([Browse shade catalog])
         match([Snap & Find shade])
@@ -84,9 +84,9 @@ flowchart TD
 ~~~mermaid
 sequenceDiagram
     actor Customer
-    participant App as PaintFlow Web App
-    participant API as PaintFlow API
-    participant DB as PaintFlow Database
+    participant App as Modern Colours Web App
+    participant API as Modern Colours API
+    participant DB as Modern Colours Database
     actor Dealer
 
     Customer->>App: Select shade, size, quantity and dealer
@@ -118,7 +118,7 @@ flowchart LR
     dealer[Dealer]
     admin[Manufacturer Admin]
     gemini[Gemini AI Service]
-    system((PaintFlow.ai))
+    system((Modern Colours))
 
     customer -->|Credentials, color, order details| system
     system -->|Shades, availability, order status| customer
@@ -130,7 +130,7 @@ flowchart LR
     gemini -->|Structured copilot response| system
 ~~~
 
-## 2.3.2 DFD Level 1 — PaintFlow Core Processes
+## 2.3.2 DFD Level 1 — Modern Colours Core Processes
 
 ~~~mermaid
 flowchart LR
