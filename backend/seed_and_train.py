@@ -14,7 +14,7 @@ from seed.generate_data import run_seed
 
 def main():
     print("=" * 60)
-    print("  PaintFlow.ai - Setup")
+    print("  Modern Colours - Setup")
     print("=" * 60)
 
     # Step 1: Seed database
