@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-Master data generator: seeds the entire PaintFlow.ai database.
+Master data generator: seeds the entire Modern Colours database.
 Creates products, shades, SKUs, regions, warehouses, dealers,
 sales history, inventory levels, transfers, and dealer orders.
 """
