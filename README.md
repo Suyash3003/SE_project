@@ -382,7 +382,7 @@ The legacy diagram archive preserves prior project documentation for traceabilit
 
 ## 12. Legacy diagrams
 
-<badge>OLD — ARCHIVED</badge>
+> **OLD — ARCHIVED**
 
 The following assets are retained as historical references only:
 
