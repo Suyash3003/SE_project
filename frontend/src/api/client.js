@@ -7,10 +7,10 @@ const api = axios.create({
 
 api.interceptors.request.use((config) => {
   try {
-    const session = JSON.parse(localStorage.getItem('paintflow_session'))
+    const session = JSON.parse(localStorage.getItem('modern_colours_session'))
     if (session?.token) config.headers.Authorization = `Bearer ${session.token}`
   } catch {
-    localStorage.removeItem('paintflow_session')
+    localStorage.removeItem('modern_colours_session')
   }
   return config
 })
@@ -18,7 +18,7 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) localStorage.removeItem('paintflow_session')
+    if (error.response?.status === 401) localStorage.removeItem('modern_colours_session')
     return Promise.reject(error)
   },
 )
