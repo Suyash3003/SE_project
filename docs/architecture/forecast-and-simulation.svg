@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-<title id="title">PaintFlow.ai forecasting and scenario intelligence pipelines</title><desc id="desc">Two pipelines: Prophet model training and inference from SKU-region sales history, plus scenario-based inventory stress testing and risk calculations.</desc>
+<title id="title">Modern Colours forecasting and scenario intelligence pipelines</title><desc id="desc">Two pipelines: Prophet model training and inference from SKU-region sales history, plus scenario-based inventory stress testing and risk calculations.</desc>
 <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#64748b"/></marker><style>
 .h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}.section{font:700 17px Inter,Arial,sans-serif;letter-spacing:1px;fill:#334155}.t{font:700 16px Inter,Arial,sans-serif;fill:#0f172a}.b{font:400 13px Inter,Arial,sans-serif;fill:#334155}.small{font:600 12px Inter,Arial,sans-serif;fill:#64748b}.box{stroke-width:1.5}.line{fill:none;stroke:#64748b;stroke-width:2;marker-end:url(#arrow)}
 </style></defs>
