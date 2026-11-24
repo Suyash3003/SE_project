@@ -153,9 +153,9 @@ def populate():
 
     # Ensure demo users exist
     demo_users = [
-        ("admin@paintflow.ai", "AdminPass123!", "admin", None),
-        ("dealer@paintflow.ai", "DealerPass123!", "dealer", 1),
-        ("customer@paintflow.ai", "CustomerPass123!", "customer", None),
+        ("admin@moderncolours.local", "AdminPass123!", "admin", None),
+        ("dealer@moderncolours.local", "DealerPass123!", "dealer", 1),
+        ("customer@moderncolours.local", "CustomerPass123!", "customer", None),
     ]
     for email, pw, role, dealer_id in demo_users:
         u = db.query(User).filter(User.email == email).first()
