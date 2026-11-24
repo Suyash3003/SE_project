@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-<title id="title">PaintFlow.ai logical domain model</title><desc id="desc">Logical relationships between product catalogue, inventory, geographic network, dealers, customers, sales history and user identity entities.</desc>
+<title id="title">Modern Colours logical domain model</title><desc id="desc">Logical relationships between product catalogue, inventory, geographic network, dealers, customers, sales history and user identity entities.</desc>
 <defs><style>
 .h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}
 .head{font:700 16px Inter,Arial,sans-serif;fill:#0f172a}.body{font:400 13px Inter,Arial,sans-serif;fill:#334155}.note{font:600 12px Inter,Arial,sans-serif;fill:#64748b}
@@ -7,7 +7,7 @@
 .group{stroke-width:1.5}
 </style><marker id="end" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 Z" fill="#64748b"/></marker></defs>
 <rect width="1600" height="1000" fill="#f8fafc"/>
-<text x="64" y="62" class="h">PaintFlow.ai | Logical Domain Model</text>
+<text x="64" y="62" class="h">Modern Colours | Logical Domain Model</text>
 <text x="64" y="90" class="sub">Twelve document-model classes grouped into product, inventory, commercial, sales and identity domains</text>
 <rect x="64" y="116" width="1472" height="2" fill="#dbe4ee"/>
 <rect x="64" y="148" width="470" height="345" rx="16" fill="#eff6ff" stroke="#93c5fd" class="group"/>
