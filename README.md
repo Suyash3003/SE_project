@@ -1,241 +1,188 @@
-
 # MODERN COLOURS
-### Intelligent Manufacturing. Connected Operations.
 
 <p align="center">
-  <img src="./mark.svg" alt="Modern Colours Logo" width="110" />
+  <img src="./mark.svg" alt="Modern Colours mark" width="76" />
 </p>
 
+<h3 align="center">Intelligent Manufacturing. Connected Operations.</h3>
+
 <p align="center">
-  <strong>A Unified Digital Operations Platform for Modern Manufacturing</strong>
+  A unified digital operations platform for modern manufacturing
   <br />
-  Designed & Engineered by <a href="https://leorit.xyz">Leorit</a>
+  Designed &amp; engineered by <a href="https://leorit.xyz"><strong>Leorit</strong></a>
   <br />
   Kohara, Ludhiana, Punjab, India
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PLATFORM-Manufacturing%20OS-8802C9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/DEPLOYMENT-Vercel-111111?style=for-the-badge&logo=vercel" />
-  <img src="https://img.shields.io/badge/ARCHITECTURE-Modular-EB0102?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/INTERFACE-Enterprise%20UI-FEEF03?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MANUFACTURING-OPERATIONS%20PLATFORM-8802C9?style=flat-square" alt="Manufacturing operations platform" />
+  <img src="https://img.shields.io/badge/ARCHITECTURE-MODULAR-EB0102?style=flat-square" alt="Modular architecture" />
+  <img src="https://img.shields.io/badge/DEPLOYMENT-VERCEL-111111?style=flat-square&logo=vercel&logoColor=white" alt="Vercel deployment" />
+</p>
+
+<p align="center">
+  <strong>PRODUCTION INTELLIGENCE</strong> &nbsp;·&nbsp;
+  <strong>SALES OPERATIONS</strong> &nbsp;·&nbsp;
+  <strong>LEAD INTELLIGENCE</strong>
 </p>
 
 ---
 
-## Overview
+## Platform overview
 
-**Modern Colours** is a digitally enabled manufacturing operations environment designed to bring production visibility, sales coordination, order management, and lead intelligence into one unified software experience.
+**Modern Colours** brings production visibility, sales coordination, order management, and lead intelligence into one unified software environment.
 
-Developed by **Leorit**, the platform brings together three interconnected operational modules under a consistent design system and shared business vocabulary.
+Designed and engineered by **Leorit**, the platform is organized as three focused frontend applications. Each module has its own operational workspace while sharing a common visual language, reference data conventions, and deployment pipeline.
 
-The objective is simple: create a structured digital layer across manufacturing operations, connecting the information that moves between customers, orders, production teams, and business development.
+The platform is designed to make key manufacturing and commercial workflows easier to explore through a consistent, connected interface.
 
-Instead of fragmented operational interfaces, Modern Colours presents a unified environment for understanding and managing the manufacturing lifecycle.
+## Platform modules
 
-## Platform Architecture
-
-The platform consists of three specialized operational modules.
-
-| Module | Route | Operational Focus |
+| Module | Application path | Purpose |
 |---|---|---|
-| Production & Machine Intelligence | `/machine-module` | Production visibility and machine operations |
-| Sales & Order Management | `/sales-module` | Customer relationships and order lifecycle |
-| Lead Intelligence | `/lead-module` | Lead tracking and business development |
+| **Production & Machine** | `/machine-module` · `machine_prod_extended/` | Production visibility, machine views, operator workspaces, and batch tracking |
+| **Sales & Order Management** | `/sales-module` · `sales_crm/` | Customer relationships, sales pipeline, and order lifecycle views |
+| **Lead Intelligence** | `/lead-module` · `lead_system/` | Lead tracking, prospect management, and business development workflows |
 
-### 01 — Production & Machine Intelligence
+### Production & Machine
 
-`machine_prod_extended/`
+A factory-floor focused workspace for presenting production activity and machine-related operational information.
 
-A production-focused operational interface designed to provide visibility into factory-floor activities.
-
-- Production monitoring interface
-- Machine-level operational views
+- Production monitoring views
+- Machine-level operational screens
 - Operator-specific workspaces
 - Batch and production tracking
-- Time-driven operational scenarios
+- Scripted operational scenarios
 
-### 02 — Sales & Order Management
+### Sales & Order Management
 
-`sales_crm/`
+A commercial operations workspace that brings customer and order information into a structured interface.
 
-A centralized commercial operations interface connecting customer relationships with order management.
-
-- Customer relationship management
+- Customer relationship views
 - Sales pipeline visibility
 - Order lifecycle management
 - Product and raw-material references
-- Customer-specific operational views
+- Customer-specific workspaces
 
-### 03 — Lead Intelligence
+### Lead Intelligence
 
-`lead_system/`
+A business development workspace for organizing prospective customer information and lead activity.
 
-A business development interface designed to structure lead information and provide visibility into prospective business opportunities.
-
-- Lead management
-- Prospect tracking
+- Lead and prospect tracking
 - Business development workflows
-- Lead intelligence interfaces
-- Structured sales opportunity views
+- Lead intelligence views
+- Structured opportunity information
 
 ---
 
-## Unified Design Architecture
+## Shared design system
 
-All three modules follow a shared design language to maintain visual and operational consistency.
+All three applications follow a common design system to maintain a consistent experience across the platform.
 
-The shared design system is the single source of truth for the entire platform.
+The shared design resources are maintained centrally:
 
-**Core design principles**
+- `DESIGN_SYSTEM.md` — design principles and specifications.
+- `design-system-kit copy/` — shared component and design references.
 
-- Consistent colour architecture
-- Unified typography and hierarchy
-- Standardized spacing and layout
-- Reusable interface components
-- Consistent elevation and surfaces
-- Motion and interaction guidelines
-- Responsive operational interfaces
+The system covers colour, typography, spacing, elevation, motion, and reusable interface patterns. Individual modules consume these shared conventions rather than establishing separate visual systems.
 
-**Design resources**
+## Shared business conventions
 
-- `DESIGN_SYSTEM.md` — Core design specifications.
-- `design-system-kit copy/` — Shared component and design references.
+The modules use common reference conventions so that information remains recognizable across the platform.
 
-Individual modules consume the shared design language without redefining its foundations.
-
----
-
-## Shared Business Data Model
-
-The platform maintains consistent business terminology and reference data across all three modules.
-
-| Data Domain | Shared Convention |
+| Data area | Convention |
 |---|---|
-| Customers | 8 common customer records |
-| Products | Unified product references |
-| Raw Materials | Shared material references |
+| Customers | Eight shared customer records |
+| Products | Common product references |
+| Raw materials | Common material references |
 | Geography | Consistent city references |
-| Production Batches | `B-2280` – `B-2299` |
+| Production batches | `B-2280` through `B-2299` |
 | Currency | Indian Rupee (₹) |
-| Number Formatting | Indian numbering conventions |
-| Date Formatting | `DD MMM YYYY` |
+| Number formatting | Indian digit grouping |
+| Date formatting | `DD MMM YYYY` |
 
-This consistency enables the modules to be presented together as one connected operational environment.
+## Operational walkthrough
 
----
+The applications include scripted scenarios and a simulated clock to present repeatable changes in interface state. This makes the environment suitable for demonstrations, walkthroughs, and unattended display screens.
 
-## Operational Experience
+### Presenter console
 
-### Scenario-driven Interfaces
+Use **Ctrl + Shift + D** to reveal the presenter console.
 
-The platform incorporates a scripted operational timeline to demonstrate how information and interface states evolve over time.
+| Control | Behaviour |
+|---|---|
+| Play / Pause | Start or pause the scripted timeline |
+| 1× | Normal playback |
+| 5× | Accelerated playback |
+| 20× | Fast-forward playback |
+| Jump | Move to a predefined moment |
+| Reset | Return to the initial scenario state |
 
-A simulated clock drives the predefined scenarios, allowing the applications to present changing operational states without requiring a live backend.
+The presenter console is hidden during the normal application experience.
 
-### Presenter Console
+### Open a module in a user context
 
-The built-in presenter console provides control over the operational timeline.
-
-**Keyboard shortcut:** `CTRL + SHIFT + D`
-
-Available controls:
-
-- Play / Pause
-- 1× — Normal playback
-- 5× — Accelerated playback
-- 20× — Fast-forward playback
-- Jump to predefined moments
-- Reset scenario
-
-The console remains hidden during normal presentation.
-
-### Contextual User Access
-
-Modules support direct entry into predefined user contexts through URL parameters.
-
-Example:
-
-`/machine-module/?as=U-106`
-
-This opens the machine module in the context of the specified user.
-
-### Continuous Operation
-
-Each module automatically cycles through its scripted operational timeline approximately every four minutes.
-
-This supports unattended displays, presentations, and continuous product walkthroughs.
-
----
-
-## Technology & Deployment Architecture
-
-Modern Colours is organized as three independent frontend applications assembled into one unified deployment.
-
-Each module maintains its own Vite configuration, dependencies, and application structure.
-
-### Deployment Architecture
+The `as` query parameter opens a module in a predefined user context.
 
 ```text
-MODERN COLOURS
-│
-├── Landing Page
-│
-├── Production & Machine
-│   └── machine_prod_extended/
-│
-├── Sales & Order Management
-│   └── sales_crm/
-│
-├── Lead Intelligence
-│   └── lead_system/
-│
-├── Shared Design System
-│   ├── DESIGN_SYSTEM.md
-│   └── design-system-kit copy/
-│
-├── build.mjs
-├── vercel.json
-└── dist/
-    ├── index.html
-    ├── machine-module/
-    ├── sales-module/
-    └── lead-module/
+/machine-module/?as=U-106
 ```
 
-### Unified Build Pipeline
+### Continuous playback
 
-The custom `build.mjs` orchestrates the deployment process.
-
-1. Builds each available application independently.
-2. Applies the appropriate base path to each application.
-3. Collects the generated assets.
-4. Assembles the applications into a unified `dist/` directory.
-5. Includes the central landing page.
-6. Skips modules that are not yet present.
-
-This architecture allows individual modules to evolve independently while maintaining a single deployment endpoint.
+Each module loops its scripted timeline approximately every four minutes, allowing a display to continue cycling through the prepared scenarios.
 
 ---
 
-## Installation & Development
+## Architecture
 
-### Prerequisites
+The repository contains three standalone Vite applications assembled into a single deployment.
+
+```text
+SE_project/
+├── machine_prod_extended/   # Production & Machine application
+├── sales_crm/               # Sales & Order Management application
+├── lead_system/             # Lead Intelligence application
+├── design-system-kit copy/  # Shared design references
+├── DESIGN_SYSTEM.md         # Design system specifications
+├── build.mjs                # Unified build orchestrator
+├── vercel.json              # Vercel deployment and routing
+├── mark.svg                 # Modern Colours brand mark
+└── README.md
+```
+
+### Unified build pipeline
+
+The root `build.mjs` script:
+
+1. Builds each module that is present in the repository.
+2. Applies the module-specific base path.
+3. Collects the generated application assets.
+4. Assembles the applications and landing page into one `dist/` directory.
+5. Skips modules that are not yet present, allowing the suite to build incrementally.
+
+Each module retains its own Vite project configuration and dependencies.
+
+---
+
+## Local development
+
+### Requirements
 
 - Node.js
 - npm
 - Git
 
-### Clone the Repository
+### Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/Suyash3003/SE_project.git
+cd SE_project
 ```
 
-### Run Individual Modules
+### Run an individual module
 
-Each module can be developed independently.
+Each development command starts the corresponding standalone Vite application. On first run, the module's dependencies are installed.
 
 **Production & Machine**
 
@@ -243,7 +190,7 @@ Each module can be developed independently.
 npm run dev:machine
 ```
 
-`http://localhost:5173/machine-module/`
+Open `http://localhost:5173/machine-module/`.
 
 **Sales & Order Management**
 
@@ -251,7 +198,7 @@ npm run dev:machine
 npm run dev:sales
 ```
 
-`http://localhost:5173/sales-module/`
+Open `http://localhost:5173/sales-module/`.
 
 **Lead Intelligence**
 
@@ -259,17 +206,17 @@ npm run dev:sales
 npm run dev:leads
 ```
 
-`http://localhost:5173/lead-module/`
+Open `http://localhost:5173/lead-module/`.
 
-The first execution of an individual development command installs that application's dependencies.
+### Build the complete platform
 
-### Build the Complete Platform
+From the repository root:
 
 ```bash
 node build.mjs
 ```
 
-The unified production bundle is generated in:
+The combined build output is written to:
 
 ```text
 dist/
@@ -277,59 +224,49 @@ dist/
 
 ---
 
-## Production Deployment
+## Deployment
 
-The platform is configured for a unified deployment through **Vercel**.
+The repository is configured for a unified deployment on **Vercel**. Import the repository and use the configuration already defined in `vercel.json`.
 
-Import the repository into Vercel and retain the repository's existing deployment configuration.
-
-| Configuration | Value |
+| Vercel setting | Value |
 |---|---|
-| Build Command | `node build.mjs` |
-| Output Directory | `dist` |
-| Install Command | `npm install --no-audit --no-fund` |
-| Deployment Configuration | `vercel.json` |
-
-The existing Vercel configuration handles the build output and SPA routing for the individual modules.
-
-### Deployment Model
+| Build command | `node build.mjs` |
+| Output directory | `dist` |
+| Install command | `npm install --no-audit --no-fund` |
+| Routing configuration | `vercel.json` |
 
 **One repository. Three applications. One deployment.**
 
-Each application remains independently structured while being delivered through a unified platform.
+The modules are built independently and delivered together through the shared deployment output.
 
 ---
 
-## Environment & Integration Scope
+## Runtime and integration scope
 
-The deployed environment uses prepared seed data and a simulated operational clock to provide a consistent, repeatable software experience.
+The current deployed frontend environment runs on prepared seed data and a simulated clock. It does **not** connect to the factory's live ERP, production database, authentication infrastructure, or external backend services.
 
-The current frontend environment does not establish a connection to the factory's live ERP, production database, authentication infrastructure, or external backend services.
+The environment is isolated from the live production ERP. Changes and activity within this frontend environment do not modify actual factory operations.
 
-It operates independently of the existing live production ERP.
-
-This separation ensures that the platform environment can be explored and presented without modifying or interfering with actual factory operations.
+This distinction is important: the platform provides a realistic, navigable software experience, while its current data and scenario playback are self-contained.
 
 ---
 
 ## About Leorit
 
-**Built by Leorit — Engineering Digital Infrastructure for Industry.**
+**Leorit builds digital infrastructure for industry.**
 
-Leorit develops technology-driven solutions for businesses looking to modernize complex operational workflows.
+Leorit develops technology-driven solutions for businesses modernizing complex operational workflows, spanning manufacturing software, digital operations, intelligent automation, and digital twins.
 
-From manufacturing software and digital operations to intelligent automation and digital twins, Leorit focuses on transforming fragmented business processes into structured, connected systems.
-
-**Website:** https://leorit.xyz
+[**Visit leorit.xyz**](https://leorit.xyz)
 
 ---
 
 <p align="center">
-  <img src="./mark.svg" alt="Modern Colours" width="48" />
+  <img src="./mark.svg" alt="Modern Colours mark" width="34" />
   <br />
   <strong>MODERN COLOURS</strong>
   <br />
   Intelligent Manufacturing. Connected Operations.
   <br /><br />
-  <sub>Designed & Engineered by Leorit · Kohara, Ludhiana, India</sub>
+  <sub>Designed &amp; engineered by Leorit · Kohara, Ludhiana, India</sub>
 </p>
