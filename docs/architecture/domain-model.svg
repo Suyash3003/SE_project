@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PaintFlow.ai logical domain model</title><desc id="desc">Logical relationships between product catalogue, inventory, geographic network, dealers, customers, sales history and user identity entities.</desc>
+<defs><style>
+.h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}
+.head{font:700 16px Inter,Arial,sans-serif;fill:#0f172a}.body{font:400 13px Inter,Arial,sans-serif;fill:#334155}.note{font:600 12px Inter,Arial,sans-serif;fill:#64748b}
+.line{fill:none;stroke:#64748b;stroke-width:2}
+.group{stroke-width:1.5}
+</style><marker id="end" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 Z" fill="#64748b"/></marker></defs>
+<rect width="1600" height="1000" fill="#f8fafc"/>
+<text x="64" y="62" class="h">PaintFlow.ai | Logical Domain Model</text>
+<text x="64" y="90" class="sub">Twelve document-model classes grouped into product, inventory, commercial, sales and identity domains</text>
+<rect x="64" y="116" width="1472" height="2" fill="#dbe4ee"/>
+<rect x="64" y="148" width="470" height="345" rx="16" fill="#eff6ff" stroke="#93c5fd" class="group"/>
+<text x="88" y="180" class="head">PRODUCT CATALOGUE</text>
+<rect x="92" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#60a5fa"/><text x="112" y="234" class="head">Product</text><text x="112" y="258" class="body">category • finish</text><text x="112" y="278" class="body">base type • pricing</text>
+<rect x="328" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#60a5fa"/><text x="348" y="234" class="head">Shade</text><text x="348" y="258" class="body">shade code • HEX/RGB</text><text x="348" y="278" class="body">family • trending</text>
+<rect x="210" y="358" width="180" height="86" rx="10" fill="#fff" stroke="#60a5fa"/><text x="230" y="386" class="head">SKU</text><text x="230" y="410" class="body">size • SKU code</text><text x="230" y="430" class="body">unit cost • MRP</text>
+<path d="M272 249 H328" class="line" marker-end="url(#end)"/><text x="300" y="238" text-anchor="middle" class="note">1 : N</text>
+<path d="M418 292 V328 H300 V358" class="line" marker-end="url(#end)"/><text x="368" y="320" class="note">1 : N</text>
+<rect x="565" y="148" width="470" height="345" rx="16" fill="#f0fdf4" stroke="#86efac" class="group"/>
+<text x="589" y="180" class="head">NETWORK &amp; INVENTORY</text>
+<rect x="592" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#4ade80"/><text x="612" y="234" class="head">Region</text><text x="612" y="258" class="body">name • states</text>
+<rect x="828" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#4ade80"/><text x="848" y="234" class="head">Warehouse</text><text x="848" y="258" class="body">region • city • geo</text><text x="848" y="278" class="body">capacity</text>
+<rect x="592" y="358" width="180" height="86" rx="10" fill="#fff" stroke="#4ade80"/><text x="612" y="386" class="head">InventoryLevel</text><text x="612" y="410" class="body">stock • reorder point</text><text x="612" y="430" class="body">days of cover</text>
+<rect x="828" y="358" width="180" height="86" rx="10" fill="#fff" stroke="#4ade80"/><text x="848" y="386" class="head">InventoryTransfer</text><text x="848" y="410" class="body">source • destination</text><text x="848" y="430" class="body">SKU • qty • status</text>
+<path d="M772 249 H828" class="line" marker-end="url(#end)"/><text x="800" y="238" text-anchor="middle" class="note">1 : N</text>
+<path d="M918 292 V328 H682 V358" class="line" marker-end="url(#end)"/><text x="802" y="320" class="note">1 : N</text>
+<path d="M772 401 H828" class="line" marker-end="url(#end)"/><text x="800" y="390" text-anchor="middle" class="note">transfer records</text>
+<rect x="1066" y="148" width="470" height="345" rx="16" fill="#fff7ed" stroke="#fdba74" class="group"/>
+<text x="1090" y="180" class="head">COMMERCIAL NETWORK</text>
+<rect x="1093" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#fb923c"/><text x="1113" y="234" class="head">Dealer</text><text x="1113" y="258" class="body">region • warehouse</text><text x="1113" y="278" class="body">tier • credit • score</text>
+<rect x="1329" y="206" width="180" height="86" rx="10" fill="#fff" stroke="#fb923c"/><text x="1349" y="234" class="head">DealerOrder</text><text x="1349" y="258" class="body">dealer • SKU • quantity</text><text x="1349" y="278" class="body">status • AI suggestion</text>
+<rect x="1211" y="358" width="180" height="86" rx="10" fill="#fff" stroke="#fb923c"/><text x="1231" y="386" class="head">CustomerOrderRequest</text><text x="1231" y="410" class="body">customer • shade • dealer</text><text x="1231" y="430" class="body">status • quantity</text>
+<path d="M1273 249 H1329" class="line" marker-end="url(#end)"/><text x="1301" y="238" text-anchor="middle" class="note">1 : N</text>
+<path d="M1183 292 V328 H1301 V358" class="line" marker-end="url(#end)"/>
+<rect x="64" y="546" width="470" height="236" rx="16" fill="#fdf2f8" stroke="#f9a8d4" class="group"/>
+<text x="88" y="578" class="head">SALES SIGNALS</text>
+<rect x="210" y="626" width="180" height="100" rx="10" fill="#fff" stroke="#f472b6"/><text x="230" y="656" class="head">SalesHistory</text><text x="230" y="680" class="body">SKU • region • date</text><text x="230" y="702" class="body">quantity • revenue</text>
+<rect x="565" y="546" width="470" height="236" rx="16" fill="#f5f3ff" stroke="#c4b5fd" class="group"/>
+<text x="589" y="578" class="head">IDENTITY &amp; ACCESS</text>
+<rect x="710" y="626" width="180" height="100" rx="10" fill="#fff" stroke="#a78bfa"/><text x="730" y="656" class="head">User</text><text x="730" y="680" class="body">email / phone</text><text x="730" y="702" class="body">role • status • dealer_id</text>
+<rect x="1066" y="546" width="470" height="236" rx="16" fill="#f1f5f9" stroke="#94a3b8" class="group"/>
+<text x="1090" y="578" class="head">LOGICAL REFERENCE LINKS</text>
+<text x="1094" y="626" class="body">• Shade.product_id → Product.id</text>
+<text x="1094" y="654" class="body">• SKU.shade_id → Shade.id</text>
+<text x="1094" y="682" class="body">• InventoryLevel.warehouse_id / sku_id</text>
+<text x="1094" y="710" class="body">• DealerOrder.dealer_id / sku_id</text>
+<text x="1094" y="738" class="body">• SalesHistory.sku_id / region_id</text>
+<path d="M300 493 V626" class="line" marker-end="url(#end)"/><text x="313" y="560" class="note">SKU history</text>
+<path d="M300 444 V512 H682 V626" class="line" marker-end="url(#end)"/><text x="480" y="502" class="note">account</text>
+<path d="M682 493 V626" class="line" marker-end="url(#end)"/>
+<path d="M918 493 V526 H1301 V626" class="line" marker-end="url(#end)"/><text x="1084" y="516" class="note">dealer / request association</text>
+<rect x="64" y="824" width="1472" height="112" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<text x="88" y="858" class="head">Persistence note</text>
+<text x="88" y="888" class="body">These are logical domain references implemented as document fields. The current SQLite adapter stores JSON payloads in a shared documents table;</text>
+<text x="88" y="912" class="body">the diagram does not imply relational foreign-key constraints or database-enforced joins.</text>
+<text x="64" y="974" class="note">Source: backend/app/models/* and backend/app/database.py • Logical relationships are inferred from id fields and service queries.</text>
+</svg>
