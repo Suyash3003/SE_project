@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Module Architecture — Production &amp; Machine</title>
+<desc id="desc">Factory-floor workspace focused on production visibility, machine-level information, operator context and batch-oriented walkthroughs.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Module Architecture — Production &amp; Machine</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">Factory-floor workspace focused on production visibility, machine-level information, operator context and batch-oriented walkthroughs.</text>
+<path d="M 485 325 L 580 325" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 980 325 L 1075 325" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 430 L 500 590" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 430 L 1060 590" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="85" y="220" width="400" height="210" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 107 220 H 463 Q 485 220 485 242 V 282 H 85 V 242 Q 85 220 107 220" fill="#7157E8"/>
+      <text x="109" y="260" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRODUCTION MONITORING</text>
+      <text x="111" y="319" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="111" dy="0">Production activity overview</tspan><tspan x="111" dy="30">Time-driven operational states</tspan><tspan x="111" dy="30">At-a-glance factory-floor visibility</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="580" y="220" width="400" height="210" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 602 220 H 958 Q 980 220 980 242 V 282 H 580 V 242 Q 580 220 602 220" fill="#3678E8"/>
+      <text x="604" y="260" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">MACHINE WORKSPACES</text>
+      <text x="606" y="319" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="606" dy="0">Machine-level operational screens</tspan><tspan x="606" dy="30">Operator-specific workspace views</tspan><tspan x="606" dy="30">Contextual user entry via URL</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1075" y="220" width="400" height="210" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1097 220 H 1453 Q 1475 220 1475 242 V 282 H 1075 V 242 Q 1075 220 1097 220" fill="#159B91"/>
+      <text x="1099" y="260" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">BATCH TRACKING</text>
+      <text x="1101" y="319" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1101" dy="0">Production batch references</tspan><tspan x="1101" dy="30">B-2280 through B-2299</tspan><tspan x="1101" dy="30">Consistent date and quantity display</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="285" y="590" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 307 590 H 693 Q 715 590 715 612 V 652 H 285 V 612 Q 285 590 307 590" fill="#D98A28"/>
+      <text x="309" y="630" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SCRIPTED SCENARIO LAYER</text>
+      <text x="311" y="689" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="311" dy="0">Prepared demonstration data</tspan><tspan x="311" dy="30">Simulated clock drives visible state</tspan><tspan x="311" dy="30">Repeatable timeline for walkthroughs</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="845" y="590" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 867 590 H 1253 Q 1275 590 1275 612 V 652 H 845 V 612 Q 845 590 867 590" fill="#D65C78"/>
+      <text x="869" y="630" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">OPERATOR CONTEXT</text>
+      <text x="871" y="689" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="871" dy="0">Example: /machine-module/?as=U-106</tspan><tspan x="871" dy="30">Predefined user context for the demo</tspan><tspan x="871" dy="30">No live production ERP write-through</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

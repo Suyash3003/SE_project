@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Scripted Scenario &amp; Presenter-Control Architecture</title>
+<desc id="desc">A simulated clock drives prepared interface scenarios for repeatable demos, while the hidden presenter console exposes playback controls.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Scripted Scenario &amp; Presenter-Control Architecture</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">A simulated clock drives prepared interface scenarios for repeatable demos, while the hidden presenter console exposes playback controls.</text>
+<path d="M 490 295 L 575 295" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 985 295 L 1070 295" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 390 L 460 545" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 390 L 1090 545" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="80" y="205" width="410" height="185" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 102 205 H 468 Q 490 205 490 227 V 267 H 80 V 227 Q 80 205 102 205" fill="#7157E8"/>
+      <text x="104" y="245" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PREPARED SCENARIOS</text>
+      <text x="106" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="106" dy="0">Seeded demonstration records</tspan><tspan x="106" dy="30">Predefined operational moments</tspan><tspan x="106" dy="30">No live ERP data feed</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="575" y="205" width="410" height="185" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 597 205 H 963 Q 985 205 985 227 V 267 H 575 V 227 Q 575 205 597 205" fill="#3678E8"/>
+      <text x="599" y="245" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SIMULATED CLOCK</text>
+      <text x="601" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="601" dy="0">Advances scripted interface state</tspan><tspan x="601" dy="30">Automatic cycle approximately every 4 minutes</tspan><tspan x="601" dy="30">Consistent walkthrough timing</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1070" y="205" width="410" height="185" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1092 205 H 1458 Q 1480 205 1480 227 V 267 H 1070 V 227 Q 1070 205 1092 205" fill="#159B91"/>
+      <text x="1094" y="245" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">MODULE INTERFACES</text>
+      <text x="1096" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1096" dy="0">Production &amp; Machine</tspan><tspan x="1096" dy="30">Sales &amp; Order Management</tspan><tspan x="1096" dy="30">Lead Intelligence</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="180" y="545" width="565" height="245" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 202 545 H 723 Q 745 545 745 567 V 607 H 180 V 567 Q 180 545 202 545" fill="#D98A28"/>
+      <text x="204" y="585" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRESENTER CONSOLE</text>
+      <text x="206" y="644" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="206" dy="0">Shortcut: Ctrl + Shift + D</tspan><tspan x="206" dy="30">Play / Pause  •  1× normal speed</tspan><tspan x="206" dy="30">5× accelerated  •  20× fast-forward</tspan><tspan x="206" dy="30">Jump to predefined moments  •  Reset</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="815" y="545" width="565" height="245" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 837 545 H 1358 Q 1380 545 1380 567 V 607 H 815 V 567 Q 815 545 837 545" fill="#D65C78"/>
+      <text x="839" y="585" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">CONTEXTUAL ENTRY</text>
+      <text x="841" y="644" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="841" dy="0">Example: /machine-module/?as=U-106</tspan><tspan x="841" dy="30">Opens a predefined user context</tspan><tspan x="841" dy="30">Designed for guided demos and displays</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

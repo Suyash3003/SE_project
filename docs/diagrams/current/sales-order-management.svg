@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Module Architecture — Sales &amp; Order Management</title>
+<desc id="desc">Commercial workspace connecting customer relationship context, sales-pipeline visibility, order lifecycle views and shared product references.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Module Architecture — Sales &amp; Order Management</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">Commercial workspace connecting customer relationship context, sales-pipeline visibility, order lifecycle views and shared product references.</text>
+<path d="M 500 330 L 570 330" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 990 330 L 1060 330" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 445 L 520 625" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1270 445 L 1040 625" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="80" y="215" width="420" height="230" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 102 215 H 478 Q 500 215 500 237 V 277 H 80 V 237 Q 80 215 102 215" fill="#7157E8"/>
+      <text x="104" y="255" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">CUSTOMER WORKSPACE</text>
+      <text x="106" y="314" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="106" dy="0">Eight common customer records</tspan><tspan x="106" dy="30">Customer-specific operational views</tspan><tspan x="106" dy="30">Consistent contact and city references</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="570" y="215" width="420" height="230" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 592 215 H 968 Q 990 215 990 237 V 277 H 570 V 237 Q 570 215 592 215" fill="#3678E8"/>
+      <text x="594" y="255" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SALES PIPELINE</text>
+      <text x="596" y="314" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="596" dy="0">Sales activity and opportunity visibility</tspan><tspan x="596" dy="30">Structured commercial workflow views</tspan><tspan x="596" dy="30">Consistent customer context</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1060" y="215" width="420" height="230" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1082 215 H 1458 Q 1480 215 1480 237 V 277 H 1060 V 237 Q 1060 215 1082 215" fill="#159B91"/>
+      <text x="1084" y="255" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">ORDER LIFECYCLE</text>
+      <text x="1086" y="314" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1086" dy="0">Order status and progression views</tspan><tspan x="1086" dy="30">Customer-specific order context</tspan><tspan x="1086" dy="30">Commercial hand-off visibility</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="300" y="625" width="440" height="190" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 322 625 H 718 Q 740 625 740 647 V 687 H 300 V 647 Q 300 625 322 625" fill="#D98A28"/>
+      <text x="324" y="665" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRODUCT REFERENCES</text>
+      <text x="326" y="724" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="326" dy="0">Unified product catalogue vocabulary</tspan><tspan x="326" dy="30">Shared raw-material references</tspan><tspan x="326" dy="30">Consistent currency and quantity formats</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="820" y="625" width="440" height="190" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 842 625 H 1238 Q 1260 625 1260 647 V 687 H 820 V 647 Q 820 625 842 625" fill="#D65C78"/>
+      <text x="844" y="665" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRESENTATION DATA</text>
+      <text x="846" y="724" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="846" dy="0">Prepared seed records and scripted states</tspan><tspan x="846" dy="30">INR and Indian number formatting</tspan><tspan x="846" dy="30">DD MMM YYYY date convention</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

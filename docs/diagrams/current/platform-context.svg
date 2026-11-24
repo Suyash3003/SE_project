@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Platform Context — Three Applications, One Suite</title>
+<desc id="desc">One landing page routes users into three independent operational frontends. Shared conventions unify the experience; the current demo does not imply a live shared backend.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Platform Context — Three Applications, One Suite</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">One landing page routes users into three independent operational frontends. Shared conventions unify the experience; the current demo does not imply a live shared backend.</text>
+<path d="M 780 305 L 290 420" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 305 L 780 420" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 305 L 1270 420" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 290 625 L 430 725" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 780 625 L 780 725" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 1270 625 L 1130 725" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<g filter="url(#shadow)">
+      <rect x="570" y="165" width="420" height="140" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 592 165 H 968 Q 990 165 990 187 V 227 H 570 V 187 Q 570 165 592 165" fill="#17213D"/>
+      <text x="594" y="205" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">MODERN COLOURS</text>
+      <text x="596" y="264" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="596" dy="0">Central landing page and module entry</tspan><tspan x="596" dy="30">One public deployment endpoint</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="75" y="420" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 97 420 H 483 Q 505 420 505 442 V 482 H 75 V 442 Q 75 420 97 420" fill="#7157E8"/>
+      <text x="99" y="460" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">01  PRODUCTION &amp; MACHINE</text>
+      <text x="101" y="519" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="101" dy="0">/machine-module</tspan><tspan x="101" dy="30">Production visibility and machine views</tspan><tspan x="101" dy="30">Operator workspaces and batch tracking</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="565" y="420" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 587 420 H 973 Q 995 420 995 442 V 482 H 565 V 442 Q 565 420 587 420" fill="#3678E8"/>
+      <text x="589" y="460" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">02  SALES &amp; ORDER MANAGEMENT</text>
+      <text x="591" y="519" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="591" dy="0">/sales-module</tspan><tspan x="591" dy="30">Customer relationships and sales pipeline</tspan><tspan x="591" dy="30">Order lifecycle workspace</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1055" y="420" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1077 420 H 1463 Q 1485 420 1485 442 V 482 H 1055 V 442 Q 1055 420 1077 420" fill="#159B91"/>
+      <text x="1079" y="460" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">03  LEAD INTELLIGENCE</text>
+      <text x="1081" y="519" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1081" dy="0">/lead-module</tspan><tspan x="1081" dy="30">Prospect and lead tracking</tspan><tspan x="1081" dy="30">Business-development opportunity views</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="140" y="725" width="590" height="145" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 162 725 H 708 Q 730 725 730 747 V 787 H 140 V 747 Q 140 725 162 725" fill="#D98A28"/>
+      <text x="164" y="765" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SHARED DESIGN LANGUAGE</text>
+      <text x="166" y="824" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="166" dy="0">DESIGN_SYSTEM.md and shared component references</tspan><tspan x="166" dy="30">Consistent colour, type, spacing, motion and surfaces</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="830" y="725" width="590" height="145" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 852 725 H 1398 Q 1420 725 1420 747 V 787 H 830 V 747 Q 830 725 852 725" fill="#D65C78"/>
+      <text x="854" y="765" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SHARED BUSINESS CONVENTIONS</text>
+      <text x="856" y="824" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="856" dy="0">Common customer, product, material, geography and batch references</tspan><tspan x="856" dy="30">Consistent INR, Indian number grouping and DD MMM YYYY dates</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

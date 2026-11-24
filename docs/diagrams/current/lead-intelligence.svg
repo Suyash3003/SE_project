@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Module Architecture — Lead Intelligence</title>
+<desc id="desc">A dedicated business-development workspace for structuring prospective customer information and presenting lead activity and opportunity status.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Module Architecture — Lead Intelligence</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">A dedicated business-development workspace for structuring prospective customer information and presenting lead activity and opportunity status.</text>
+<path d="M 510 340 L 575 340" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 985 340 L 1050 340" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 450 L 780 630" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="100" y="230" width="410" height="220" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 122 230 H 488 Q 510 230 510 252 V 292 H 100 V 252 Q 100 230 122 230" fill="#7157E8"/>
+      <text x="124" y="270" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">LEAD MANAGEMENT</text>
+      <text x="126" y="329" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="126" dy="0">Organize lead records</tspan><tspan x="126" dy="30">Maintain structured prospect information</tspan><tspan x="126" dy="30">Present lead activity</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="575" y="230" width="410" height="220" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 597 230 H 963 Q 985 230 985 252 V 292 H 575 V 252 Q 575 230 597 230" fill="#3678E8"/>
+      <text x="599" y="270" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PROSPECT TRACKING</text>
+      <text x="601" y="329" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="601" dy="0">Track prospective customer context</tspan><tspan x="601" dy="30">Keep opportunity information discoverable</tspan><tspan x="601" dy="30">Use consistent customer references</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1050" y="230" width="410" height="220" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1072 230 H 1438 Q 1460 230 1460 252 V 292 H 1050 V 252 Q 1050 230 1072 230" fill="#159B91"/>
+      <text x="1074" y="270" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">OPPORTUNITY VIEWS</text>
+      <text x="1076" y="329" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1076" dy="0">Business-development visibility</tspan><tspan x="1076" dy="30">Structured sales opportunity views</tspan><tspan x="1076" dy="30">Support follow-up workflows</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="280" y="630" width="1000" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 302 630 H 1258 Q 1280 630 1280 652 V 692 H 280 V 652 Q 280 630 302 630" fill="#D98A28"/>
+      <text x="304" y="670" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">MODULE BOUNDARIES</text>
+      <text x="306" y="729" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="306" dy="0">Independent frontend application: lead_system/  •  route: /lead-module</tspan><tspan x="306" dy="30">Prepared demonstration data and scripted experience; no live ERP or external CRM integration is implied</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

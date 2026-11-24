@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Unified Build &amp; Deployment Pipeline</title>
+<desc id="desc">Three independently configured Vite applications are built separately, assembled by the root build orchestrator and published as one Vercel deployment.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Unified Build &amp; Deployment Pipeline</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">Three independently configured Vite applications are built separately, assembled by the root build orchestrator and published as one Vercel deployment.</text>
+<path d="M 270 365 L 570 465" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 365 L 780 465" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1290 365 L 990 465" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 610 L 780 690" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1130 770 L 1180 770" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="55" y="190" width="430" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 77 190 H 463 Q 485 190 485 212 V 252 H 55 V 212 Q 55 190 77 190" fill="#7157E8"/>
+      <text x="79" y="230" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">MACHINE APP</text>
+      <text x="81" y="289" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="81" dy="0">machine_prod_extended/</tspan><tspan x="81" dy="30">Independent Vite config and dependencies</tspan><tspan x="81" dy="30">Base path: /machine-module/</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="565" y="190" width="430" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 587 190 H 973 Q 995 190 995 212 V 252 H 565 V 212 Q 565 190 587 190" fill="#3678E8"/>
+      <text x="589" y="230" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SALES APP</text>
+      <text x="591" y="289" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="591" dy="0">sales_crm/</tspan><tspan x="591" dy="30">Independent Vite config and dependencies</tspan><tspan x="591" dy="30">Base path: /sales-module/</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1075" y="190" width="430" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1097 190 H 1483 Q 1505 190 1505 212 V 252 H 1075 V 212 Q 1075 190 1097 190" fill="#159B91"/>
+      <text x="1099" y="230" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">LEAD APP</text>
+      <text x="1101" y="289" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1101" dy="0">lead_system/</tspan><tspan x="1101" dy="30">Independent Vite config and dependencies</tspan><tspan x="1101" dy="30">Base path: /lead-module/</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="430" y="465" width="700" height="145" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 452 465 H 1108 Q 1130 465 1130 487 V 527 H 430 V 487 Q 430 465 452 465" fill="#17213D"/>
+      <text x="454" y="505" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">ROOT BUILD ORCHESTRATOR — build.mjs</text>
+      <text x="456" y="564" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="456" dy="0">Builds each available application • applies base paths • gathers assets</tspan><tspan x="456" dy="30">Skips modules not present in the checkout</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="430" y="690" width="700" height="160" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 452 690 H 1108 Q 1130 690 1130 712 V 752 H 430 V 712 Q 430 690 452 690" fill="#D98A28"/>
+      <text x="454" y="730" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">UNIFIED DIST OUTPUT</text>
+      <text x="456" y="789" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="456" dy="0">dist/index.html  •  dist/machine-module/</tspan><tspan x="456" dy="30">dist/sales-module/  •  dist/lead-module/</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1180" y="690" width="325" height="160" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1202 690 H 1483 Q 1505 690 1505 712 V 752 H 1180 V 712 Q 1180 690 1202 690" fill="#D65C78"/>
+      <text x="1204" y="730" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">VERCEL HOST</text>
+      <text x="1206" y="789" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1206" dy="0">Build command: node build.mjs</tspan><tspan x="1206" dy="30">Output directory: dist</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

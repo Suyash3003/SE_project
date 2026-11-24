@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Shared Design-System Architecture</title>
+<desc id="desc">One central design specification and reusable design reference kit establish visual consistency across the three independent frontends.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Shared Design-System Architecture</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">One central design specification and reusable design reference kit establish visual consistency across the three independent frontends.</text>
+<path d="M 780 335 L 300 485" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 335 L 780 485" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 335 L 1260 485" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 300 690 L 600 780" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 780 690 L 780 780" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1260 690 L 960 780" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+      <rect x="330" y="185" width="900" height="150" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 352 185 H 1208 Q 1230 185 1230 207 V 247 H 330 V 207 Q 330 185 352 185" fill="#17213D"/>
+      <text x="354" y="225" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">DESIGN SYSTEM SOURCE OF TRUTH</text>
+      <text x="356" y="284" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="356" dy="0">DESIGN_SYSTEM.md  +  design-system-kit copy/</tspan><tspan x="356" dy="30">Shared tokens, principles, component references and interaction rules</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="85" y="485" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 107 485 H 493 Q 515 485 515 507 V 547 H 85 V 507 Q 85 485 107 485" fill="#7157E8"/>
+      <text x="109" y="525" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRODUCTION &amp; MACHINE</text>
+      <text x="111" y="584" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="111" dy="0">Consumes common design language</tspan><tspan x="111" dy="30">Machine and operator workspaces</tspan><tspan x="111" dy="30">Production status and batch views</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="565" y="485" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 587 485 H 973 Q 995 485 995 507 V 547 H 565 V 507 Q 565 485 587 485" fill="#3678E8"/>
+      <text x="589" y="525" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SALES &amp; ORDER MANAGEMENT</text>
+      <text x="591" y="584" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="591" dy="0">Consumes common design language</tspan><tspan x="591" dy="30">Customer, pipeline and order views</tspan><tspan x="591" dy="30">Shared commercial components</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1045" y="485" width="430" height="205" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1067 485 H 1453 Q 1475 485 1475 507 V 547 H 1045 V 507 Q 1045 485 1067 485" fill="#159B91"/>
+      <text x="1069" y="525" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">LEAD INTELLIGENCE</text>
+      <text x="1071" y="584" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1071" dy="0">Consumes common design language</tspan><tspan x="1071" dy="30">Prospect and opportunity views</tspan><tspan x="1071" dy="30">Shared interaction patterns</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="400" y="780" width="760" height="100" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 422 780 H 1138 Q 1160 780 1160 802 V 842 H 400 V 802 Q 400 780 422 780" fill="#D98A28"/>
+      <text x="424" y="820" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">VISUAL CONSISTENCY</text>
+      <text x="426" y="879" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="426" dy="0">Colour • typography • spacing • elevation • motion • responsive layout</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>

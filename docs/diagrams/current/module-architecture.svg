@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1560 960" role="img" aria-labelledby="title desc">
+<title id="title">Modern Colours — Modular Application Architecture</title>
+<desc id="desc">Each module owns its application structure, Vite configuration and dependencies while consuming shared design resources and consistent business vocabulary.</desc>
+<defs>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#263657" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9AA7BD"/></marker>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#E5EAF3"/></pattern>
+</defs>
+<rect width="1560" height="960" fill="#F5F7FC"/>
+<rect width="1560" height="960" fill="url(#grid)" opacity=".8"/>
+<rect x="0" y="0" width="1560" height="14" fill="#7157E8"/>
+<text x="70" y="78" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="800" fill="#17213D">Modular Application Architecture</text>
+<text x="70" y="119" font-family="Inter,Arial,sans-serif" font-size="19" fill="#66728A">Each module owns its application structure, Vite configuration and dependencies while consuming shared design resources and consistent business vocabulary.</text>
+<path d="M 290 520 L 440 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 780 520 L 510 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 1270 520 L 1080 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 290 520 L 1080 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 780 520 L 1120 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<path d="M 1270 520 L 1080 670" fill="none" stroke="#9AA7BD" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 8"/>
+<g filter="url(#shadow)">
+      <rect x="65" y="205" width="450" height="315" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 87 205 H 493 Q 515 205 515 227 V 267 H 65 V 227 Q 65 205 87 205" fill="#7157E8"/>
+      <text x="89" y="245" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">PRODUCTION &amp; MACHINE</text>
+      <text x="91" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="91" dy="0">Project: machine_prod_extended/</tspan><tspan x="91" dy="30">Route: /machine-module</tspan><tspan x="91" dy="30">Production monitoring and machine views</tspan><tspan x="91" dy="30">Operator-specific workspaces</tspan><tspan x="91" dy="30">Batch tracking and scripted scenarios</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="555" y="205" width="450" height="315" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 577 205 H 983 Q 1005 205 1005 227 V 267 H 555 V 227 Q 555 205 577 205" fill="#3678E8"/>
+      <text x="579" y="245" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">SALES &amp; ORDER MANAGEMENT</text>
+      <text x="581" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="581" dy="0">Project: sales_crm/</tspan><tspan x="581" dy="30">Route: /sales-module</tspan><tspan x="581" dy="30">Customer relationship views</tspan><tspan x="581" dy="30">Sales pipeline and order lifecycle</tspan><tspan x="581" dy="30">Product and raw-material references</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="1045" y="205" width="450" height="315" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 1067 205 H 1473 Q 1495 205 1495 227 V 267 H 1045 V 227 Q 1045 205 1067 205" fill="#159B91"/>
+      <text x="1069" y="245" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">LEAD INTELLIGENCE</text>
+      <text x="1071" y="304" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="1071" dy="0">Project: lead_system/</tspan><tspan x="1071" dy="30">Route: /lead-module</tspan><tspan x="1071" dy="30">Lead and prospect management</tspan><tspan x="1071" dy="30">Business-development workflows</tspan><tspan x="1071" dy="30">Structured opportunity views</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="140" y="670" width="600" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 162 670 H 718 Q 740 670 740 692 V 732 H 140 V 692 Q 140 670 162 670" fill="#D98A28"/>
+      <text x="164" y="710" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SHARED PRESENTATION FOUNDATIONS</text>
+      <text x="166" y="769" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="166" dy="0">DESIGN_SYSTEM.md  •  design-system-kit copy/</tspan><tspan x="166" dy="30">Reusable patterns, tokens and interaction conventions</tspan></text>
+    </g>
+<g filter="url(#shadow)">
+      <rect x="820" y="670" width="600" height="175" rx="22" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="2"/>
+      <path d="M 842 670 H 1398 Q 1420 670 1420 692 V 732 H 820 V 692 Q 820 670 842 670" fill="#D65C78"/>
+      <text x="844" y="710" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SHARED RUNTIME CONVENTIONS</text>
+      <text x="846" y="769" font-family="Inter,Arial,sans-serif" font-size="19" fill="#25304A"><tspan x="846" dy="0">Prepared seed data  •  simulated clock  •  presenter controls</tspan><tspan x="846" dy="30">Common reference vocabulary; not a live ERP integration</tspan></text>
+    </g>
+<path d="M70 895 H1490" stroke="#DCE3EF" stroke-width="2"/>
+<text x="70" y="930" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="1.4" fill="#66728A">MODERN COLOURS  •  TARGET ARCHITECTURE FROM THE THREE-MODULE PROJECT SPECIFICATION</text>
+</svg>
