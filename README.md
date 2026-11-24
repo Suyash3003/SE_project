@@ -1,4 +1,4 @@
-# MODERN COLOURS
+<h1 align="center">MODERN COLOURS</h1>
 
 <p align="center">
   <img src="./mark.svg" alt="Modern Colours brand mark" width="82" />
