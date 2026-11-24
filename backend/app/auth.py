@@ -28,7 +28,7 @@ def _secret() -> bytes:
     secret = JWT_SECRET or os.getenv("JWT_SECRET", "")
     if len(secret) < 32:
         if ENVIRONMENT == "development":
-            secret = "paintflow-dev-secret-key-at-least-32-chars-long-2025-secure-demo"
+            secret = "modern-colours-dev-secret-key-at-least-32-chars-long-2025-secure-demo"
         else:
             raise RuntimeError("JWT_SECRET must be configured with at least 32 characters in production")
     return secret.encode()
