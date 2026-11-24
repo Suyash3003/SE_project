@@ -14,7 +14,7 @@ MODEL_DIR = BASE_DIR / "app" / "ml" / "models"
 SCENARIO_DIR = BASE_DIR / "app" / "simulations" / "data"
 
 DATABASE_PATH = Path(
-    os.getenv("DATABASE_PATH", str(BASE_DIR / "data" / "paintflow.db"))
+    os.getenv("DATABASE_PATH", str(BASE_DIR / "data" / "modern_colours.db"))
 )
 
 # The narrative date for the demo - all logic uses this as "today"
