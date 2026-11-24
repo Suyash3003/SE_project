@@ -208,7 +208,7 @@ Each model declares a collection name. Model instances are serialized to JSON in
 - The current storage schema does not define relational foreign-key constraints.
 - Collection reads deserialize matching documents before in-memory filtering and sorting.
 - The collection index narrows the initial table scan by collection, but it does not index every field inside JSON payloads.
-- SQLite is file-backed at backend/data/paintflow.db by default; the path can be overridden with DATABASE_PATH.
+- SQLite is file-backed at backend/data/modern_colours.db by default; the path can be overridden with DATABASE_PATH.
 
 This design keeps the application compact and straightforward to run locally. For higher write concurrency, multi-instance deployment or large collections, evaluate a relational database and indexed query layer before scaling the workload.
 
@@ -660,7 +660,7 @@ The backend loads environment variables from backend/.env. The committed backend
 |---|---|---|
 | ENVIRONMENT | development | Runtime mode; production mode enforces a configured JWT secret |
 | JWT_SECRET | No production default | HMAC signing secret; minimum 32 characters in production |
-| DATABASE_PATH | backend/data/paintflow.db | SQLite database file path |
+| DATABASE_PATH | backend/data/modern_colours.db | SQLite database file path |
 | APP_SIMULATION_DATE | 2025-10-10 | Narrative reference date used by forecast and scenario logic |
 | GEMINI_API_KEY | Empty | Optional API key for Gemini copilot |
 | GEMINI_MODEL | gemini-2.5-flash | Gemini model identifier |
@@ -693,7 +693,7 @@ Recommended production topology:
 | Vite frontend | http://localhost:5173 | React application |
 | FastAPI backend | http://localhost:8001 | API and business logic |
 | OpenAPI docs | http://localhost:8001/docs | API exploration |
-| SQLite | backend/data/paintflow.db | Local persistent store |
+| SQLite | backend/data/modern_colours.db | Local persistent store |
 
 The SQLite file path and the Vite proxy target are development defaults; production values must be configured for the selected hosting environment.
 
