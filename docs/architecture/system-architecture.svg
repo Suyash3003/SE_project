@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+<title id="title">PaintFlow.ai — System Architecture</title><desc id="desc">End-to-end architecture from role-based React portals through FastAPI routers and services to SQLite, Prophet model artifacts, scenario snapshots, and optional Gemini AI.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6 Z" fill="#64748b"/></marker>
+  <style>
+    .h{font:700 30px Inter,Arial,sans-serif;fill:#0f172a}.sub{font:400 15px Inter,Arial,sans-serif;fill:#475569}
+    .layer{font:700 15px Inter,Arial,sans-serif;letter-spacing:2px;fill:#475569}
+    .t{font:700 19px Inter,Arial,sans-serif;fill:#0f172a}.b{font:400 14px Inter,Arial,sans-serif;fill:#334155}
+    .s{font:600 13px Inter,Arial,sans-serif;fill:#475569}.box{stroke-width:1.6}
+    .line{fill:none;stroke:#64748b;stroke-width:2.2;marker-end:url(#arrow)}
+    .dash{fill:none;stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1600" height="1120" fill="#f8fafc"/>
+<text x="64" y="64" class="h">PaintFlow.ai | System Architecture</text>
+<text x="64" y="92" class="sub">Role-based B2B2C supply-chain intelligence • Current repository implementation</text>
+<rect x="64" y="120" width="1472" height="2" fill="#dbe4ee"/>
+<text x="64" y="158" class="layer">01 / PRESENTATION LAYER</text>
+<rect x="64" y="178" width="1472" height="178" rx="18" fill="#eef2ff" stroke="#c7d2fe" class="box"/>
+<rect x="88" y="204" width="420" height="126" rx="13" fill="#fff" stroke="#818cf8" class="box"/>
+<text x="112" y="236" class="t">Admin Portal</text><text x="112" y="262" class="b">Supply-chain KPIs • warehouse map • transfers</text><text x="112" y="286" class="b">Dealer performance • catalog • demand forecasts</text><text x="112" y="312" class="s">Protected route: /admin</text>
+<rect x="590" y="204" width="420" height="126" rx="13" fill="#fff" stroke="#818cf8" class="box"/>
+<text x="614" y="236" class="t">Dealer Portal</text><text x="614" y="262" class="b">Dealer dashboard • smart orders • order history</text><text x="614" y="286" class="b">Alerts • customer order requests</text><text x="614" y="312" class="s">Protected route: /dealer</text>
+<rect x="1092" y="204" width="420" height="126" rx="13" fill="#fff" stroke="#818cf8" class="box"/>
+<text x="1116" y="236" class="t">Customer Portal</text><text x="1116" y="262" class="b">Shade catalogue • nearby dealers • Snap &amp; Find</text><text x="1116" y="286" class="b">Availability • customer order requests</text><text x="1116" y="312" class="s">Protected route: /customer</text>
+<text x="800" y="382" text-anchor="middle" class="sub">React 19 • React Router 7 • Vite 7 • Tailwind CSS 4 • Recharts • Axios</text>
+<path d="M800 396 V432" class="line"/>
+<text x="64" y="468" class="layer">02 / API &amp; APPLICATION LAYER</text>
+<rect x="64" y="488" width="1472" height="248" rx="18" fill="#ecfeff" stroke="#67e8f9" class="box"/>
+<rect x="88" y="516" width="1424" height="62" rx="10" fill="#fff" stroke="#06b6d4" class="box"/>
+<text x="112" y="542" class="t">HTTP / JSON API</text><text x="112" y="564" class="b">Axios bearer-token interceptor • 10 s client timeout • Vite /api proxy in local development</text>
+<path d="M800 578 V600" class="line"/>
+<rect x="88" y="604" width="1424" height="108" rx="12" fill="#cffafe" stroke="#0891b2" class="box"/>
+<text x="112" y="638" class="t">FastAPI 0.115 · Uvicorn ASGI</text>
+<text x="112" y="666" class="b">Routers: Authentication • Admin • Dealer • Customer • Forecast • Copilot • Simulation</text>
+<text x="112" y="690" class="b">Pydantic request schemas • role dependencies • allowlisted CORS • health and metadata endpoints</text>
+<path d="M800 736 V770" class="line"/>
+<text x="64" y="806" class="layer">03 / DOMAIN SERVICES</text>
+<rect x="64" y="826" width="1472" height="112" rx="18" fill="#f0fdf4" stroke="#86efac" class="box"/>
+<g>
+<rect x="88" y="850" width="218" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="197" y="876" text-anchor="middle" class="t">Analytics</text><text x="197" y="898" text-anchor="middle" class="s">KPIs • performance</text>
+<rect x="324" y="850" width="218" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="433" y="876" text-anchor="middle" class="t">Inventory</text><text x="433" y="898" text-anchor="middle" class="s">coverage • transfers</text>
+<rect x="560" y="850" width="218" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="669" y="876" text-anchor="middle" class="t">Dealer</text><text x="669" y="898" text-anchor="middle" class="s">health • smart orders</text>
+<rect x="796" y="850" width="218" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="905" y="876" text-anchor="middle" class="t">Forecast</text><text x="905" y="898" text-anchor="middle" class="s">Prophet inference</text>
+<rect x="1032" y="850" width="218" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="1141" y="876" text-anchor="middle" class="t">Copilot</text><text x="1141" y="898" text-anchor="middle" class="s">Gemini / heuristic</text>
+<rect x="1268" y="850" width="244" height="64" rx="10" fill="#fff" stroke="#4ade80"/><text x="1390" y="876" text-anchor="middle" class="t">Simulation Engine</text><text x="1390" y="898" text-anchor="middle" class="s">scenario impact</text>
+</g>
+<path d="M800 938 V965" class="line"/>
+<text x="64" y="1002" class="layer">04 / PERSISTENCE &amp; INTELLIGENCE RUNTIMES</text>
+<rect x="64" y="1020" width="465" height="78" rx="13" fill="#fff7ed" stroke="#fdba74" class="box"/>
+<text x="88" y="1050" class="t">SQLite document store</text><text x="88" y="1076" class="b">documents(collection, id, payload) • collection index</text>
+<rect x="568" y="1020" width="465" height="78" rx="13" fill="#f5f3ff" stroke="#c4b5fd" class="box"/>
+<text x="592" y="1050" class="t">Prophet model runtime</text><text x="592" y="1076" class="b">Optional .pkl artifacts • startup preload • fallback forecast</text>
+<rect x="1072" y="1020" width="464" height="78" rx="13" fill="#eff6ff" stroke="#93c5fd" class="box"/>
+<text x="1096" y="1050" class="t">Scenario &amp; AI integrations</text><text x="1096" y="1076" class="b">JSON scenario snapshots • optional Gemini 2.5 Flash</text>
+</svg>
