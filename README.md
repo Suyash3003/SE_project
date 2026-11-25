@@ -445,26 +445,33 @@ The current product description defines a self-contained demonstration environme
 
 The distinction matters: Modern Colours presents a connected operational experience, but the current demonstration environment is isolated from the live production ERP.
 
-## 10. Architecture diagrams
+## 10. Scientific architecture diagrams
 
-The complete **nine-diagram current architecture set** is in [`docs/diagrams/current/`](docs/diagrams/current/README.md). Expand the links below to inspect each source SVG.
+The current architecture is documented by **17 formal engineering figures** rendered in a monochrome technical-report style.
 
-<details>
-<summary><strong>Current diagram register (9 diagrams)</strong></summary>
+| Fig. | Diagram | Engineering focus |
+|---:|---|---|
+| 1 | [System Context / Use-Case Boundary](docs/diagrams/current/platform-context.svg) | Actors, module routes and system boundary. |
+| 2 | [Layered Three-Application Architecture](docs/diagrams/current/module-architecture.svg) | Independent Vite module boundaries and shared dependencies. |
+| 3 | [Production & Machine Activity Model](docs/diagrams/current/production-machine.svg) | Operator context, monitoring, machine workspace and batch tracking. |
+| 4 | [Sales & Order Management Process](docs/diagrams/current/sales-order-management.svg) | Customer workspace, sales pipeline, order lifecycle and analytics. |
+| 5 | [Lead Intelligence Prioritization Workflow](docs/diagrams/current/lead-intelligence.svg) | Lead records, prospect context, weighted lead score and follow-up. |
+| 6 | [Shared Design-System Dependency Model](docs/diagrams/current/shared-design-system.svg) | Central specification, reference kit and consuming frontend modules. |
+| 7 | [Shared Business Conventions Model](docs/diagrams/current/shared-business-data.svg) | Common customer, product, raw material, geography, batch and formatting domains. |
+| 8 | [Deployment / Build Node Diagram](docs/diagrams/current/build-and-deployment.svg) | Independent Vite builds, build.mjs, dist output and Vercel. |
+| 9 | [Scenario Activity / Presenter State Model](docs/diagrams/current/scenario-timeline.svg) | Simulated clock, presenter controls and repeatable timeline. |
+| 10 | [DFD Level 0 — Context](docs/diagrams/current/dfd-level-0.svg) | External actors and central Modern Colours process. |
+| 11 | [DFD Level 1 — Functional Decomposition](docs/diagrams/current/dfd-level-1.svg) | Six logical processes and conceptual data stores. |
+| 12 | [Component Diagram — Detailed Decomposition](docs/diagrams/current/component-architecture.svg) | Module views, shared packages and runtime support. |
+| 13 | [Activity Diagram — Cross-Module Journey](docs/diagrams/current/activity-workflow.svg) | Landing, module choice, initialization and presenter path. |
+| 14 | [Sequence Diagram — Platform Boot](docs/diagrams/current/sequence-platform-boot.svg) | Numbered messages across seven lifelines. |
+| 15 | [Collaboration Diagram — Object Dependencies](docs/diagrams/current/collaboration-map.svg) | Numbered object relationships and shared references. |
+| 16 | [State Machine — Application Lifecycle](docs/diagrams/current/state-machine.svg) | Module and simulated scenario transitions. |
+| 17 | [Mathematical Model Sheet](docs/diagrams/current/mathematical-models.svg) | OEE, commercial KPIs, lead score and scenario equation. |
 
-1. [Platform context](docs/diagrams/current/platform-context.svg) — Landing page, three module routes, shared design language and business conventions.
-2. [Modular application architecture](docs/diagrams/current/module-architecture.svg) — Three separate Vite apps, each retaining its own project configuration and dependencies.
-3. [Production & Machine module](docs/diagrams/current/production-machine.svg) — Production visibility, machine workspaces, operator context and batch-oriented scenarios.
-4. [Sales & Order Management module](docs/diagrams/current/sales-order-management.svg) — Customer views, sales pipeline, order lifecycle and shared product/material references.
-5. [Lead Intelligence module](docs/diagrams/current/lead-intelligence.svg) — Lead and prospect management, business-development workflows and opportunity views.
-6. [Shared design-system architecture](docs/diagrams/current/shared-design-system.svg) — Central design specification and component references consumed by all three applications.
-7. [Shared business reference model](docs/diagrams/current/shared-business-data.svg) — Common customer, product, raw material, geography, batch and formatting conventions.
-8. [Unified build and deployment](docs/diagrams/current/build-and-deployment.svg) — Independent module builds assembled into one Vercel deployment by build.mjs.
-9. [Scenario timeline and presenter controls](docs/diagrams/current/scenario-timeline.svg) — Simulated clock, repeated scenario playback, hidden presenter console and user-context entry.
+The set includes system context, deployment, component, DFD Level 0 / Level 1, activity, sequence, collaboration, state-machine and mathematical-model views. See the [current diagram register](docs/diagrams/current/README.md) for captions and modelling notes.
 
-</details>
-
-The diagram library also contains an explicit archive for the diagrams from earlier project versions. See [Legacy diagrams](#12-legacy-diagrams).
+**Scope:** diagrams describe three independent frontend applications, shared conventions, prepared demonstration data and a simulated clock. They do not imply a live ERP, backend API, shared physical database, or trained machine-learning service. Historical diagrams remain explicitly marked OLD / ARCHIVED in [`docs/diagrams/old/`](docs/diagrams/old/README.md).
 
 ## 11. Repository layout and implementation status
 
