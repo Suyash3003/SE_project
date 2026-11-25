@@ -30,6 +30,7 @@
 - [3. System architecture](#3-system-architecture)
 - [4. Shared design system](#4-shared-design-system)
 - [5. Shared business conventions](#5-shared-business-conventions)
+  - [Mathematical foundations and analytical models](#mathematical-foundations-and-analytical-models)
 - [6. Scenario engine and presenter console](#6-scenario-engine-and-presenter-console)
 - [7. Build and deployment architecture](#7-build-and-deployment-architecture)
 - [8. Local development](#8-local-development)
@@ -194,6 +195,120 @@ The project specification defines shared reference conventions across the three 
 </p>
 
 **Data-model clarification:** these are shared business-reference conventions from the project specification. They do not, by themselves, imply a shared database, live API, foreign-key model or real-time synchronization between the three frontends.
+
+### Mathematical foundations and analytical models
+
+Modern Colours uses **deterministic, formula-driven operational models** to organize the information presented across its production, sales and lead workflows. The models below define the platform's KPI and prioritization logic; the demonstration experience evaluates them against prepared reference data and scripted scenario states.
+
+#### 5.1 Production and machine-performance model
+
+The Production & Machine module uses an **Overall Equipment Effectiveness (OEE) model** to express equipment effectiveness as the product of availability, performance and quality.
+
+\[
+\text{OEE}=A\times P\times Q
+\]
+
+where:
+
+\[
+A=\frac{\text{Operating Time}}{\text{Planned Production Time}}
+\]
+
+\[
+P=\frac{\text{Ideal Cycle Time}\times\text{Total Units Produced}}{\text{Operating Time}}
+\]
+
+\[
+Q=\frac{\text{Good Units}}{\text{Total Units Produced}}
+\]
+
+All three factors are ratios. OEE is reported as a percentage after multiplying the result by 100. The component ratios are evaluated over the same production window.
+
+Additional production indicators are:
+
+| Indicator | Mathematical definition | Interpretation |
+|---|---|---|
+| Machine utilization | \(\frac{\text{Operating Time}}{\text{Scheduled Time}}\times100\) | Share of scheduled time spent operating |
+| Production throughput | \(\frac{\text{Good Units Produced}}{\text{Elapsed Production Time}}\) | Accepted output per unit of time |
+| Batch completion | \(\frac{\text{Completed Quantity}}{\text{Planned Batch Quantity}}\times100\) | Progress against the planned batch quantity |
+| Cycle-time variance | \(\frac{\text{Actual Cycle Time}-\text{Ideal Cycle Time}}{\text{Ideal Cycle Time}}\times100\) | Deviation from the target cycle time |
+
+A higher OEE, utilization and batch-completion percentage indicate stronger operating performance. A positive cycle-time variance indicates that the observed cycle is slower than the ideal cycle.
+
+#### 5.2 Sales pipeline and order-performance models
+
+The Sales & Order Management module uses **funnel-conversion and order-performance models** to make customer and commercial progress measurable.
+
+\[
+\text{Stage Conversion}_{i\rightarrow i+1}
+=
+\frac{\text{Opportunities Entering Stage }i+1}
+{\text{Opportunities Entering Stage }i}\times100
+\]
+
+\[
+\text{Average Order Value (AOV)}
+=
+\frac{\text{Total Order Value}}{\text{Number of Orders}}
+\]
+
+\[
+\text{Order Fulfilment Rate}
+=
+\frac{\text{Orders Fulfilled}}{\text{Orders Due for Fulfilment}}\times100
+\]
+
+For a stage-weighted sales pipeline, the platform uses the weighted-value formulation:
+
+\[
+\text{Weighted Pipeline Value}
+=
+\sum_{j=1}^{n}\left(V_j\times p_j\right)
+\]
+
+where \(V_j\) is the value of opportunity \(j\), and \(p_j\) is the configured probability associated with its pipeline stage. Stage probabilities are configuration inputs; they are not represented as learned probabilities from a trained model.
+
+#### 5.3 Lead Intelligence prioritization model
+
+The Lead Intelligence module applies a **weighted multi-criteria lead-prioritization model**. Each input is normalized to a 0–100 scale before the weighted score is calculated.
+
+\[
+\text{Lead Score}
+=
+0.35F+0.30E+0.25I+0.10R
+\]
+
+where:
+
+- \(F\) = prospect fit against the target customer profile.
+- \(E\) = engagement with the business or sales team.
+- \(I\) = expressed intent or opportunity strength.
+- \(R\) = recency of the latest meaningful interaction.
+
+The result is a transparent 0–100 prioritization score. The weights are explicit business rules, not coefficients learned from historical conversion labels. The score supports sorting and follow-up prioritization; it does not guarantee that a prospect will convert.
+
+#### 5.4 Scripted scenario and state-progression model
+
+The demonstration environment uses a **deterministic, time-driven scenario model**. Prepared scenario data and the simulated clock advance the displayed operational state in a repeatable sequence.
+
+\[
+S(t+\Delta t)=T\left(S(t),\,\Delta t,\,C\right)
+\]
+
+where \(S(t)\) is the current presentation state, \(\Delta t\) is the simulated time increment, \(C\) is the selected scenario configuration and \(T\) is the scripted state-transition function.
+
+This model powers repeatable walkthroughs and the presenter-console controls. It is not a stochastic digital twin, a live machine-telemetry model or a forecast of actual factory output.
+
+#### 5.5 Model inventory and implementation scope
+
+| Platform area | Model used | Model category | Purpose |
+|---|---|---|---|
+| Production & Machine | OEE, utilization, throughput and batch-progress equations | Deterministic operational KPI models | Summarize production and machine performance |
+| Sales & Order Management | Funnel conversion, weighted pipeline, AOV and fulfilment equations | Deterministic commercial analytics | Measure pipeline movement and order performance |
+| Lead Intelligence | Weighted multi-criteria lead score | Rule-based prioritization model | Rank prospects for structured follow-up |
+| All modules | Simulated-clock scenario progression | Deterministic scripted state model | Present repeatable operational scenarios |
+
+**AI/ML transparency:** the current README describes prepared seed/reference data, frontend workflows and scripted scenarios. It does not identify a trained Random Forest, XGBoost, neural network, regression model, LLM integration or live prediction service as part of this deployment. The analytical models listed above are formula-driven business models; they should not be described as trained machine-learning models. The documented environment is isolated from the factory's live ERP, production database and external backend services.
 
 ## 6. Scenario engine and presenter console
 
