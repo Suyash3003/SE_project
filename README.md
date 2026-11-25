@@ -35,7 +35,7 @@
 - [7. Build and deployment architecture](#7-build-and-deployment-architecture)
 - [8. Local development](#8-local-development)
 - [9. Operational and integration boundaries](#9-operational-and-integration-boundaries)
-- [10. Architecture diagrams](#10-architecture-diagrams)
+- [10. Scientific architecture diagrams](#10-scientific-architecture-diagrams)
 - [11. Repository layout and implementation status](#11-repository-layout-and-implementation-status)
 - [12. Legacy diagrams](#12-legacy-diagrams)
 
